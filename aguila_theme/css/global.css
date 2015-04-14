@@ -1,5 +1,9 @@
 /* @group Global */
 
+.myClass{
+    position:absolute;
+    display: block;
+}
 /* Stack box */
 .stack .box {
     padding: 0;
