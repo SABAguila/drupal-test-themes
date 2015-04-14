@@ -2,6 +2,7 @@
 
 .myClass{
     position:absolute;
+    background: red;
     display: block;
 }
 /* Stack box */
