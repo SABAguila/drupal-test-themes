@@ -1,7 +1,7 @@
 /* @group Calendario Chicas Aguila */
 
 #block-views-calendario-chicas-aguila-block {
-    /*background-image: url(../images/gradient-chicasaguila.png);*/
+    background-image: url(../images/gradient-chicasaguila.png);
     background-repeat: repeat-x;
 }
 
