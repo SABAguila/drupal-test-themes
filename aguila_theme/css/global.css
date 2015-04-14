@@ -3,6 +3,7 @@
 .myClass{
     position:absolute;
     display: inline;
+    z-index: 0;
 }
 /* Stack box */
 .stack .box {
