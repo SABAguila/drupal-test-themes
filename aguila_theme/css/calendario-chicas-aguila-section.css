@@ -165,6 +165,12 @@
     min-height: 142px;
 }
 
+.chicas-aguila .calendar-calendar td.single-day{
+    background: rgba(255,221,0,0.87);
+}
+.chicas-aguila .calendar-calendar td.empty{
+    visibility: hidden;
+}
 
 
 .chicas-aguila .calendar-calendar .month-view .full tr.date-box, 
