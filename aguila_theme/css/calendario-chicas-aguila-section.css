@@ -165,8 +165,17 @@
     min-height: 142px;
 }
 
-.chicas-aguila .calendar-calendar td.single-day{
+.chicas-aguila .calendar-calendar tr{
+    border:none!important;
+
+}
+.chicas-aguila .calendar-calendar td{
+    border:none!important;
+}
+.chicas-aguila .calendar-calendar td.single-day .inner{
     background: rgba(255,221,0,0.87);
+    border-radius: 5px;
+    border:3px solid red;
 }
 .chicas-aguila .calendar-calendar td.empty{
     visibility: hidden;
