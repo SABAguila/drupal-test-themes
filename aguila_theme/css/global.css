@@ -1,9 +1,8 @@
 /* @group Global */
 
 .myClass{
-    position:absolute;
-    background: red;
-    display: inline;
+    margin-top: 0;
+    line-height: 0;
 }
 /* Stack box */
 .stack .box {
