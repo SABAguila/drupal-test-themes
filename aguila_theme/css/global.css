@@ -2,6 +2,7 @@
 
 .myClass{
     margin-top: 0;
+    line-height: 0;
 }
 /* Stack box */
 .stack .box {
