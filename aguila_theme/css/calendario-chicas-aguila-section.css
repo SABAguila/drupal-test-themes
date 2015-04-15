@@ -165,6 +165,18 @@
     min-height: 142px;
 }
 
+/*Custom theme calendar*/
+
+.chicas-aguila .calendar-calendar th.days{
+    background: rgba(255,221,0,0.7);
+    color: #0565be;
+    font-size: 22px;
+}
+
+.chicas-aguila .calendar-calendar th.days.sun{
+    color: #cc0000;
+}
+
 .chicas-aguila .calendar-calendar tr{
     border:none!important;
 
@@ -175,12 +187,21 @@
 .chicas-aguila .calendar-calendar td.single-day .inner{
     background: rgba(255,221,0,0.87);
     border-radius: 5px;
-    border:3px solid red;
+    border:3px solid transparent;
+    color: #0565be;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
 }
+.chicas-aguila .calendar-calendar td.single-day.today .inner{
+    border-color: #fff;
+}
+
 .chicas-aguila .calendar-calendar td.empty{
     visibility: hidden;
 }
 
+/*End custom theme calendar*/
 
 .chicas-aguila .calendar-calendar .month-view .full tr.date-box, 
 .chicas-aguila .calendar-calendar .month-view .full tr.date-box td, 
