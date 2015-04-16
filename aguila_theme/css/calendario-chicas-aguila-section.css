@@ -187,19 +187,24 @@
 .chicas-aguila .calendar-calendar td.single-day .inner{
     background: rgba(255,221,0,0.87);
     border-radius: 5px;
-    border:3px solid transparent;
-    color: #0565be;
-    font-size: 33px;
-    font-weight: bold;
-    text-align: center;
+    border:3px solid transparent;    
 }
 .chicas-aguila .calendar-calendar td.single-day.today .inner{
     border-color: #fff;
 }
 
+
 .chicas-aguila .calendar-calendar td.empty{
     visibility: hidden;
 }
+
+.chicas-aguila .calendar-calendar td.date-box{
+    color: #0565be;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 /*End custom theme calendar*/
 
