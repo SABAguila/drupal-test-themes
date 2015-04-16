@@ -164,6 +164,7 @@
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 600;
     letter-spacing: -1.1px;
+    margin-top: 73px;
 }
 #node-606 .content .field-item p{
     text-align: center;
@@ -177,9 +178,12 @@
     text-align: center;
 }
 #node-606 .content .field-name-field-titulo-mapa .field-label{
-    color: white;
+    color: #ffd800;
     background: #ffd800;
-}
+    height: 24px;
+    font-size: 8px;
+    margin-bottom: 55px;
+  }
 
 
 /* @group Media Query */
