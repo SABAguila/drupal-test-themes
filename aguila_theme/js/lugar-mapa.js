@@ -26,7 +26,7 @@
                         map: map,
                         icon: icon: iconBase + 'markerMaps.png'
                     }),
-                    //marker.setMap(map);
+                    marker.setMap(map);
                     infowindow = new google.maps.InfoWindow({
                         content: '<div class="lugar-info-window map-info-window"><h1>' + $('.banner-lugar-fiesta h1').text() + '</h1></div>'
                     });

@@ -1,9 +1,10 @@
 /*global jQuery2 */
 (function ($) {
-
+    console.log("Eventos Mapa JS");
     var map;
     var markers = [];
     var centerLatlng;
+    var iconBase = '/sites/g/files/ogq1136/f/201504/';
     
     function validGeolocation(value) {
         return value !== undefined && value !== null && value !== '';
@@ -37,7 +38,8 @@
                     var position = new google.maps.LatLng(parseFloat(node.data('latitude')),parseFloat(node.data('longitude')));
                     var marker = new google.maps.Marker({
                         position: position,
-                        title: node.data('title')
+                        title: node.data('title'),
+                        icon: icon: iconBase + 'markerMaps.png'
                     });
                     infowindow = new google.maps.InfoWindow({
                         content: node.html()
