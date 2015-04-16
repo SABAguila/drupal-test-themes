@@ -112,6 +112,15 @@
 
 /* @end */
 
+/* Filter structure modification (UPDATES)*/
+
+#block-views-1bff5e93ffa8ffaf54836ae4dcf95527 .middle h2{
+    font-size: 112.5%;
+    font-weight: 600;
+    color: #0f796b;
+    float: left;
+}
+
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
