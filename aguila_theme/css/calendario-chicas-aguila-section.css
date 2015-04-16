@@ -1,8 +1,8 @@
 /* @group Calendario Chicas Aguila */
 
 #block-views-calendario-chicas-aguila-block {
-    /*background-image: url(../images/gradient-chicasaguila.png);
-    background-repeat: repeat-x;*/
+    background-image: url(../images/gradient-chicasaguila.png);
+    background-repeat: repeat-x;
 }
 
 #block-views-calendario-chicas-aguila-block .view-calendario-chicas-aguila {
@@ -167,6 +167,10 @@
 
 /*Custom theme calendar*/
 
+body.chicas-aguila .calendario-chicas-aguila .calendar-calendar.transformado{
+    width: 630px;
+}
+
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar th.days{
     background: rgba(255,221,0,0.7);
     color: #0565be;
@@ -244,11 +248,11 @@ body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.date-box{
     background-color: transparent;
 }
 
-.chicas-aguila .calendar-calendar .month.day {
+/*.chicas-aguila .calendar-calendar .month.day {
     font-weight: 700;
     font-size: 128%;
     color: #000;
-}
+}*/
 
 .chicas-aguila .calendar-calendar td.date-box.empty .day {
     color: #b8b8b8;
