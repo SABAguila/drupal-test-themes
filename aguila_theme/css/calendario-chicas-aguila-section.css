@@ -665,7 +665,12 @@ body.chicas-aguila .calendario-chicas-aguila .calendar-calendar th.days.sun{
 }
 
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar tr{
-    border:none!important;
+    border-bottom:10px solid transparent;
+
+}
+body.chicas-aguila .calendario-chicas-aguila .calendar-calendar tr.date-box,
+body.chicas-aguila .calendario-chicas-aguila .calendar-calendar tr.single-day{
+    border-bottom:0px solid transparent;
 
 }
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td{
