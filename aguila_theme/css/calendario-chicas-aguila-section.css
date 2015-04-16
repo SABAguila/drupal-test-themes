@@ -583,7 +583,9 @@ tr.single-day td.evento-selected .inner {
         display: block;
     }
 
-
+    #block-views-calendario-chicas-aguila-block{
+        background: #fff;
+    }
 }
 
 /* Small Devices, Tablets */
