@@ -140,10 +140,10 @@
 .chicas-aguila .calendar-calendar tr.date-box td .inner,
 .chicas-aguila .calendar-calendar .month-view .full tr.date-box .inner,
 .chicas-aguila .calendar-calendar .month-view .full tr.date-box td .inner {
-    height: 35px !important;
+    height: 76px !important;
     position: absolute;
-    width: 100%;
-    top: 0;
+    width: 91%;
+    top: 12px;
     z-index: 1;
 }
 
@@ -671,14 +671,14 @@ body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td{
     padding: 4px!important;
 }
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.single-day{
-    padding: 4px!important;
+    
 }
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.single-day .inner{
     background: rgba(255,221,0,0.87);
-    border-radius: 5px;
+    border-radius: 8px;
     border:3px solid transparent;
     display: block;
-    height: 76px!important;    
+    margin: 4px;   
 }
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.single-day.today .inner{
     border-color: #fff;    
@@ -696,5 +696,9 @@ body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.date-box{
     width: 100%;
 }
 
+body.chicas-aguila .calendario-chicas-aguila .calendar-calendar div.day{
+    color: red;
+    font-size: 10px;
+}
 
 /*End custom theme calendar*/
