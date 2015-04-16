@@ -119,20 +119,35 @@
     font-weight: 600;
     color: #0f796b;
     float: left;
-    margin: 28px 0 0 42px;
+    margin: 28px 10px 0 42px;
+}
+#block-views-1bff5e93ffa8ffaf54836ae4dcf95527 .middle.tb-terminal{
+    background: #f2f5f8;
+    height: 75px;
+    margin-bottom: 42px;
 }
 .view-filtros-la-ruta-de-la-alegria-2{
-    height: 75px;
+    /*height: 75px;*/
+    background-color:none; 
 }
 .view-filtros-la-ruta-de-la-alegria-2 .view-header{
     float: left;
-    margin-top: 18px;
+    margin-top: 19px;
 }
 .view-filtros-la-ruta-de-la-alegria-2 .view-header a.filter{
     padding: 8px 18px;
     color: #666666;
     display: inline-block;
     font-weight: 600;
+    text-decoration: none;
+}
+.view-filtros-la-ruta-de-la-alegria-2 .view-header a.filter.active,
+.view-filtros-la-ruta-de-la-alegria-2 .view-header a.filter:hover{
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #0fc3ff;
+    color: #fff;
 }
 
 /* @group Media Query */
@@ -198,7 +213,7 @@
 
     .view-dynamic-filter {
         font-size: 114%;
-        margin: 0 0 40px !important;
+        margin:0px !important;
     }
 
     .view-dynamic-filter .views-row > div > p {
