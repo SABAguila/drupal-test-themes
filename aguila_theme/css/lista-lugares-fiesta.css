@@ -159,6 +159,28 @@
 
 /* @end */
 
+/*@Content Fiesta*/
+#node-606 .content .field-item h2{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: -1.1px;
+}
+#node-606 .content .field-item p{
+    text-align: center;
+    color: #575757;
+}
+#node-606 .content .field-item.even{
+    width: 87%;
+    margin: 0 auto;
+}
+#node-606 .content .field-name-field-titulo-mapa .field-items{
+    text-align: center;
+}
+#node-606 .content .field-name-field-titulo-mapa .field-label{
+    color: white;
+    background: #ffd800;
+}
+
 
 /* @group Media Query */
 
