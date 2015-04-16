@@ -1,6 +1,6 @@
 /*global jQuery2 */
 (function ($) {
-
+    console.log("Eventos Mapa JS");
     var map;
     var markers = [];
     var centerLatlng;

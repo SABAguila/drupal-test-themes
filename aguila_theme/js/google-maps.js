@@ -1,7 +1,6 @@
 /*global jQuery2 */
 (function ($) {
     $(document).ready(function () {
-        console.log("Maps Customization");
         $.mapStyles = {
             grayscale: [
                 {
