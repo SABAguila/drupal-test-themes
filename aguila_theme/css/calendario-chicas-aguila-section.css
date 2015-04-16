@@ -521,6 +521,14 @@ tr.single-day td.evento-selected .inner {
     display: none;
 }
 
+body.chicas-aguila .calendario-chicas-aguila #mobile-calendar .mon-head{
+        border-bottom: 2px solid #f1f1f1;
+        border-top: 3px solid #f1f1f1;
+}
+body.chicas-aguila .calendario-chicas-aguila #mobile-calendar .mon-head .week-day-header{
+    color: #009fd3;
+    font-weight: 400;
+}
 
 /* @end */
 
@@ -585,16 +593,7 @@ tr.single-day td.evento-selected .inner {
 
     #block-views-calendario-chicas-aguila-block{
         background: #fff;
-    }
-
-    body.chicas-aguila .calendario-chicas-aguila #mobile-calendar .mon-head{
-        border-bottom: 2px solid #f1f1f1;
-        border-top: 3px solid #f1f1f1;
-    }
-    body.chicas-aguila .calendario-chicas-aguila #mobile-calendar .mon-head .week-day-header{
-        color: #009fd3;
-        font-weight: 400;
-    }
+    }    
 }
 
 /* Small Devices, Tablets */
@@ -721,4 +720,4 @@ body.chicas-aguila .calendario-chicas-aguila .calendar-calendar div.day{
     line-height: 76px;
 }
 
-/*End custom theme calendar*/
+/*End custom theme calendar*/stom theme calendar*/
