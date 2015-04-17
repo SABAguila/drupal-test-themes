@@ -39,7 +39,7 @@
                     var marker = new google.maps.Marker({
                         position: position,
                         title: node.data('title'),
-                        icon: icon: iconBase + 'markerMaps.png'
+                        icon: iconBase + 'markerMaps.png'
                     });
                     infowindow = new google.maps.InfoWindow({
                         content: node.html()
