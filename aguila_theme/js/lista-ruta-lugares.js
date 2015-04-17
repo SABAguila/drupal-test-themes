@@ -67,7 +67,7 @@
                     icon: iconBase + 'markerMaps.png'
                 });
                 infowindow = new google.maps.InfoWindow({
-                    content: '<div class="lugar-info-window map-info-window"><img src="/sites/g/files/ogq1136/f/201504/CarnavalTooltipImg.png"><h1>' + node.data('placename') + '</h1></div>',
+                    content: '<div class="lugar-info-window map-info-window"><img src="/sites/g/files/ogq1136/f/201504/CarnavalTooltipImg.png"><h1>' + node.data('placename') + '</h1><ul id="social"><li class="facebook"></li><li class="twitter"></li></ul></div>',
                     maxWidth : 215
                 });
                 node.data("marker",marker);
