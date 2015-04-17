@@ -24,7 +24,7 @@
                         position: position,
                         title: $('.banner-lugar-fiesta h1').text(),
                         map: map,
-                        icon: icon: iconBase + 'markerMaps.png'
+                        icon: iconBase + 'markerMaps.png'
                     }),
                     marker.setMap(map);
                     infowindow = new google.maps.InfoWindow({
