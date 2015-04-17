@@ -4,7 +4,6 @@
     function validGeolocation(value) {
         return value !== undefined && value !== null && value !== '';
     }
-    var iconBase = '/sites/g/files/ogq1136/f/201504/';
     $.initModule('.ver-mapa-lugar-detalle a', function ($, node) {
         node.bind("click", function(event ) {
                     event.preventDefault();
@@ -20,6 +19,9 @@
                         scrollwheel: false,
                     },
                     map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions),
+
+
+                    var iconBase = '/sites/g/files/ogq1136/f/201504/';
                     marker = new google.maps.Marker({
                         position: position,
                         title: $('.banner-lugar-fiesta h1').text(),
