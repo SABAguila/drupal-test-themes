@@ -679,6 +679,7 @@ body.chicas-aguila .calendario-chicas-aguila #mobile-calendar.calendarContainer.
 /*Calendar*/
 
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar.transformado{
+    position: relative;
     width: 630px;
 }
 
@@ -747,9 +748,28 @@ body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-agui
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 0;
 
     /*erase later*/
     background-color: brown;
+}
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .banner > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .banner > div img{
+    height: auto;
+    width: 100%;
+}
+
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .content{
+    position: relative;
+    z-index: 5;
+}
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .content h3{
+    color: #fff;
 }
 
 
