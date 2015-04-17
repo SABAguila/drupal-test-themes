@@ -108,7 +108,32 @@
                     iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'display: none !important;'});
 
                     // Moves the arrow 76px to the left margin 
-                    iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'display: none !important;'})
+                    iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'display: none !important;'});
+
+
+                    // Taking advantage of the already established reference to
+                    // div .gm-style-iw with iwOuter variable.
+                    // You must set a new variable iwCloseBtn.
+                    // Using the .next() method of JQuery you reference the following div to .gm-style-iw.
+                    // Is this div that groups the close button elements.
+                    var iwCloseBtn = iwOuter.next();
+
+                    // Apply the desired effect to the close button
+                    iwCloseBtn.css({
+                        opacity: '1', // by default the close button has an opacity of 0.7
+                        right: '38px',
+                        top: '3px', // button repositioning
+                        border: '7px solid #48b5e9', // increasing button border and new color
+                        'border-radius': '13px', // circular effect
+                        'box-shadow': '0 0 5px #3990B9' // 3D effect to highlight the button
+                        
+                    });
+
+                    // The API automatically applies 0.7 opacity to the button after the mouseout event.
+                    // This function reverses this event to the desired value.
+                    iwCloseBtn.mouseout(function(){
+                        $(this).css({opacity: '1'});
+                    });
 
                 });
                 
