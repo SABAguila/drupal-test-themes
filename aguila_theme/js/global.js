@@ -190,9 +190,3 @@ jQuery(document).ajaxComplete(function () {
     });
 
 transformAlerts();
-
-function unsortTilesEvents(){
-    console.log( jQuery('.view-lista-de-lugares-de-fiesta') );
-}
-
-unsortTilesEvents();
