@@ -67,7 +67,7 @@
                     icon: iconBase + 'markerMaps.png'
                 });
                 infowindow = new google.maps.InfoWindow({
-                    content: '<div class="lugar-info-window map-info-window"><h1>' + node.data('placename') + '</h1></div>',
+                    content: '<div class="lugar-info-window map-info-window"><img src="/sites/g/files/ogq1136/f/201504/CarnavalTooltipImg.png"><h1>' + node.data('placename') + '</h1></div>',
                     maxWidth : 215
                 });
                 node.data("marker",marker);
@@ -89,20 +89,26 @@
 
                 google.maps.event.addListener(infowindow, 'domready', function() {
 
-                   // Reference to the DIV which receives the contents of the infowindow using jQuery
-                   var iwOuter = $('.gm-style-iw');
+                    // Reference to the DIV which receives the contents of the infowindow using jQuery
+                    var iwOuter = $('.gm-style-iw');
 
-                   /* The DIV we want to change is above the .gm-style-iw DIV.
+                    /* The DIV we want to change is above the .gm-style-iw DIV.
                     * So, we use jQuery and create a iwBackground variable,
                     * and took advantage of the existing reference to .gm-style-iw for the previous DIV with .prev().
                     */
-                   var iwBackground = iwOuter.prev();
+                    var iwBackground = iwOuter.prev();
 
-                   // Remove the background shadow DIV
-                   iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+                    // Remove the background shadow DIV
+                    iwBackground.children(':nth-child(2)').css({'display' : 'none'});
 
-                   // Remove the white background DIV
-                   iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+                    // Remove the white background DIV
+                    iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+
+                    // Moves the shadow of the arrow 76px to the left margin 
+                    iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'display: none !important;'});
+
+                    // Moves the arrow 76px to the left margin 
+                    iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'display: none !important;'})
 
                 });
                 
