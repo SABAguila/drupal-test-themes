@@ -26,9 +26,27 @@
                 ratingParent = rating.parent();
                 rating.remove();
                 ratingParent.prepend('<span>' + rating.text().replace('/5', '') + '</span>');
-            }
+                
+            }           
         });
+        
+        //trigger unsorted tiles
+        unsortTilesEvents();
+
     }
+
+    function unsortTilesEvents(){
+
+        var container = document.querySelector('.view-lista-de-lugares-de-fiesta');
+        var msnry = new Masonry( container, {
+          // options
+          columnWidth: 200,
+          itemSelector: 'li'
+        });
+        
+    }
+
+    
     
     function validGeolocation(value) {
         return value !== undefined && value !== null && value !== '';
