@@ -9,10 +9,26 @@
 .map-info-window  {
     line-height:1.35;
     overflow:hidden;
-    white-space:nowrap;
+    /*white-space:nowrap;*/
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 12px;
     text-align: center;
+    color: white;
+}
+.map-info-window #social{
+    height: 27px;
+    margin: 0;
+    padding: 0px 0 0px 3px
+}
+
+ul#social li{
+    border-right: 1px solid rgba(57, 182, 211, 0.89);
+    list-style: none;
+    height: 26px;
+    width: 50%;
+    display: inline-block;
+    margin-top: 0px;
+    background: #0a5d99;
 }
 
 .mapa-eventos .map-info-window  {
@@ -68,7 +84,7 @@
 .gm-style-iw {
     width: 218px !important;
     top: 0 !important;
-    left: 0 !important;
+    left: 29px !important;
     background-color: rgba(0, 170, 216, 0.77);
     box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
     border-radius: 2px;
