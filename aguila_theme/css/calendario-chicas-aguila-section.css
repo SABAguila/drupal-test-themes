@@ -531,11 +531,11 @@ body.chicas-aguila .calendario-chicas-aguila #mobile-calendar .mon-head .week-da
 }
 
 body.chicas-aguila .calendario-chicas-aguila #mobile-calendar.calendarContainer.dzscalendar .mon-row .week-day.today-date .the-number{
-    padding: 5px;
+    padding: 8px;
     background-color: #0665bf;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
     color: #feda00; 
 }
 
