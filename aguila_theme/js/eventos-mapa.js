@@ -1,10 +1,9 @@
 /*global jQuery2 */
 (function ($) {
-    console.log("Eventos Mapa JS");
+    console.log("Eventos Mapa icon");
     var map;
     var markers = [];
     var centerLatlng;
-    var iconBase = '/sites/g/files/ogq1136/f/201504/';
     
     function validGeolocation(value) {
         return value !== undefined && value !== null && value !== '';
@@ -36,6 +35,7 @@
                 node = $(node);
                 if (validGeolocation(node.data('latitude')) && validGeolocation(node.data('longitude'))) {
                     var position = new google.maps.LatLng(parseFloat(node.data('latitude')),parseFloat(node.data('longitude')));
+                    var iconBase = '/sites/g/files/ogq1136/f/201504/';
                     var marker = new google.maps.Marker({
                         position: position,
                         title: node.data('title'),

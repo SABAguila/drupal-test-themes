@@ -60,12 +60,15 @@
             node = $(node);
             if (validGeolocation(node.data('latitude')) && validGeolocation(node.data('longitude'))) {
                 var position = new google.maps.LatLng(parseFloat(node.data('latitude')),parseFloat(node.data('longitude')));
+                var iconBase = '/sites/g/files/ogq1136/f/201504/';
                 var marker = new google.maps.Marker({
                     position: position,
-                    title: node.data('placename')
+                    title: node.data('placename'),
+                    icon: iconBase + 'markerMaps.png'
                 });
                 infowindow = new google.maps.InfoWindow({
-                    content: '<div class="lugar-info-window map-info-window"><h1>' + node.data('placename') + '</h1></div>'
+                    content: '<div class="lugar-info-window map-info-window"><h1>' + node.data('placename') + '</h1></div>',
+                    maxWidth : 215
                 });
                 node.data("marker",marker);
                 node.data("position",position);
@@ -83,6 +86,26 @@
                 });
                 
                 marker.setMap(map);
+
+                google.maps.event.addListener(infowindow, 'domready', function() {
+
+                   // Reference to the DIV which receives the contents of the infowindow using jQuery
+                   var iwOuter = $('.gm-style-iw');
+
+                   /* The DIV we want to change is above the .gm-style-iw DIV.
+                    * So, we use jQuery and create a iwBackground variable,
+                    * and took advantage of the existing reference to .gm-style-iw for the previous DIV with .prev().
+                    */
+                   var iwBackground = iwOuter.prev();
+
+                   // Remove the background shadow DIV
+                   iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+
+                   // Remove the white background DIV
+                   iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+
+                });
+                
                 google.maps.event.addListener(marker, 'click', function () {
                     $(markers).each(function(j,alldata) { 
                         if(alldata.marker == marker) {
@@ -117,7 +140,6 @@
             centerMap();
         }
     }
-
     $.initModule('.lista-lugares-fiesta', function () {
         transformar();
         jq(document).ajaxComplete(function () {

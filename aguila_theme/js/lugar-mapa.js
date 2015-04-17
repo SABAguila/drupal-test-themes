@@ -4,7 +4,6 @@
     function validGeolocation(value) {
         return value !== undefined && value !== null && value !== '';
     }
-    var iconBase = '/sites/g/files/ogq1136/f/201504/';
     $.initModule('.ver-mapa-lugar-detalle a', function ($, node) {
         node.bind("click", function(event ) {
                     event.preventDefault();
@@ -20,13 +19,15 @@
                         scrollwheel: false,
                     },
                     map = new google.maps.Map($('.mapa-lugar-detalle')[0], mapOptions),
+
+
+                    var iconBase = '/sites/g/files/ogq1136/f/201504/';
                     marker = new google.maps.Marker({
                         position: position,
                         title: $('.banner-lugar-fiesta h1').text(),
                         map: map,
-                        icon: icon: iconBase + 'markerMaps.png'
+                        icon: iconBase + 'markerMaps.png'
                     }),
-                    marker.setMap(map);
                     infowindow = new google.maps.InfoWindow({
                         content: '<div class="lugar-info-window map-info-window"><h1>' + $('.banner-lugar-fiesta h1').text() + '</h1></div>'
                     });
