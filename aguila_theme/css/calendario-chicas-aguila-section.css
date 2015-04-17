@@ -6,6 +6,7 @@
 
 #block-views-calendario-chicas-aguila-block .view-calendario-chicas-aguila {
     margin: 0 auto;
+    position: inherit;
 }
 
 .calendario-chicas-aguila .date-nav-wrapper .date-heading {
@@ -75,7 +76,7 @@
     color: #fff;
     font-size: 15px;
     font-family: "Open Sans";
-    position: relative;
+    position: inherit;
     width: 100%;
     min-height: 330px;
 }
@@ -602,6 +603,12 @@ body.chicas-aguila .calendario-chicas-aguila #mobile-calendar.calendarContainer.
 
     #block-views-calendario-chicas-aguila-block {
       background-color: cornflowerblue;
+      position: relative;
+
+      
+      /*erase later*/
+      overflow: hidden;
+
     }    
 }
 
@@ -668,6 +675,9 @@ body.chicas-aguila .calendario-chicas-aguila #mobile-calendar.calendarContainer.
 
 /*Custom theme calendar*/
 
+
+/*Calendar*/
+
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar.transformado{
     width: 630px;
 }
@@ -728,5 +738,19 @@ body.chicas-aguila .calendario-chicas-aguila .calendar-calendar div.day{
     width: 100%;
     line-height: 76px;
 }
+
+
+/*Banner background chicas*/
+
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .banner{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    /*erase later*/
+    background-color: brown;
+}
+
 
 /*End custom theme calendar*/
