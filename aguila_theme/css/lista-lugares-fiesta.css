@@ -192,7 +192,6 @@
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 600;
     color: black;
-    text-transform: uppercase;
 }
 #node-606 .field-name-field-link-m-s-informaci-n{
     display: inline-block;
@@ -217,9 +216,13 @@
     margin-left: 31px; 
 }
 
- 
-
-
+.container-map {
+    text-align: right;
+    padding-right: 8%;
+}
+.container-map .view-map-all>span{
+  margin-right: 12px;
+} 
 /* @group Media Query */
 
 /* Custom, iPhone Retina */
