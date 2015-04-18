@@ -16,7 +16,7 @@
     color: white;
 }
 .map-info-window #social{
-    height: 27px;
+    height: 37px;
     margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@
 ul#social li{
     border-right: 1px solid rgba(57, 182, 211, 0.89);
     list-style: none;
-    height: 35px;
+    height: 37px;
     width: 50%;
     display: inline-block;
     margin-top: 0px;
@@ -46,7 +46,8 @@ ul#social li:last-of-type{
 
 .map-info-window h1 {
     font-size: 16px;
-    color: white;
+    color: white!important;
+    width: 214px;
 }   
 .map-info-window img{
     margin-top: 33px;
