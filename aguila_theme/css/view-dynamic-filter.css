@@ -163,12 +163,22 @@
 }
 .view-filtros-la-ruta-de-la-alegria-fiesta-2{
     font-size: 90%!important;
-    width: 820px;
+    width: 779px;
     margin: 0 auto!important;
+    overflow: hidden;
+    background: white;
 }
 .view-filtros-la-ruta-de-la-alegria-fiesta-2>.view-content{
-    
-    width: 100%;
+    width: 1021px;
+}
+.view-filtros-la-ruta-de-la-alegria-fiesta-2 .view-header a.filter{
+
+    text-transform: uppercase;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 90%;
+    margin-right: 14px;
+    background: none;
 }
 .view-filtros-la-ruta-de-la-alegria-fiesta-2 .view-header a.filter.active,
 .view-filtros-la-ruta-de-la-alegria-fiesta-2 .view-header a.filter:hover{
@@ -178,6 +188,10 @@
     color: black;
     font-size: 90%;
     margin-right: 14px;
+}
+
+.view-filtros-la-ruta-de-la-alegria-fiesta-2 .view-header a.filter.{
+
 }
 
 /* @group Media Query */
