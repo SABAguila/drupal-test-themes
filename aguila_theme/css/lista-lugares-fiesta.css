@@ -160,40 +160,40 @@
 /* @end */
 
 /*@Content Fiesta*/
-#node-606 .content{
+.node-fiestas .content{
     text-align: center;
 }
 
-#node-606 .content .field-item h2{
+.node-fiestas .content .field-item h2{
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 600;
     letter-spacing: -1.1px;
     margin-top: 73px;
 }
-#node-606 .content .field-item p{
+.node-fiestas .content .field-item p{
     text-align: center;
     color: #575757;
 }
-#node-606 .content .field-item.even{
+.node-fiestas .content .field-item.even{
     width: 87%;
     margin: 0 auto;
 }
-#node-606 .content .field-name-field-titulo-mapa .field-items{
+.node-fiestas .content .field-name-field-titulo-mapa .field-items{
     text-align: center;
 }
-#node-606 .content .field-name-field-titulo-mapa .field-label{
+.node-fiestas .content .field-name-field-titulo-mapa .field-label{
     color: #ffd800;
     background: #ffd800;
     height: 24px;
     font-size: 8px;
     margin-bottom: 55px;
 }
-#node-606 .field-items, #node-606 .field-items a{
+.node-fiestas .field-items, .node-fiestas .field-items a{
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 600;
     color: black;
 }
-#node-606 .field-name-field-link-m-s-informaci-n{
+.node-fiestas .field-name-field-link-m-s-informaci-n{
     display: inline-block;
     width: 198px;
     padding-top: 10px;
@@ -201,17 +201,17 @@
     border-right:1px solid #b3b3b3;
 }
 
-#node-606 .field-name-field-texto-compartir,
-#node-606 .field-name-field-facebook,
-#node-606 .field-name-field-twitter{
+.node-fiestas .field-name-field-texto-compartir,
+.node-fiestas .field-name-field-facebook,
+.node-fiestas .field-name-field-twitter{
     display: inline-block;
 }
-#node-606 .field-name-field-facebook img,
-#node-606 .field-name-field-twitter img{
+.node-fiestas .field-name-field-facebook img,
+.node-fiestas .field-name-field-twitter img{
     width: 90%;
     height: auto;
 }
-#node-606 .field-name-field-texto-compartir{
+.node-fiestas .field-name-field-texto-compartir{
     margin-right: 21px;
     margin-left: 31px; 
 }

@@ -90,8 +90,8 @@ ul#social li:last-of-type{
 /*Map Customization*/
 .gm-style-iw {
     width: 218px !important;
-    top: 37px !important;
-    left: 22px !important;
+    top: 0px !important;
+    left: 17px !important;
     background-color: rgba(0, 170, 216, 0.77);
     box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
     border-radius: 2px;
