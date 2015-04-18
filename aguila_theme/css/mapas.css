@@ -45,9 +45,12 @@ ul#social li:last-of-type{
 }
 
 .map-info-window h1 {
-    font-size: 18px;
+    font-size: 16px;
+    color: white;
 }
-
+.map-info-window img{
+    margin-top: 33px;
+}
 .map-info-window .event-date {
     color: #28c8fe;
     font-family: 'ITCAvantGardePro', Helvetica, Arial, sans-serif;
