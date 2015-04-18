@@ -24,13 +24,20 @@
 ul#social li{
     border-right: 1px solid rgba(57, 182, 211, 0.89);
     list-style: none;
-    height: 26px;
+    height: 35px;
     width: 50%;
     display: inline-block;
     margin-top: 0px;
     background: #0a5d99;
+    cursor: pointer;
+    background: url(/sites/g/files/ogq1136/f/201504/Social-sprite.png);
 }
-
+ul#social li:first-of-type{
+   background-position: left; 
+}
+ul#social li:last-of-type{
+   background-position: right; 
+}
 .mapa-eventos .map-info-window  {
     min-height: 90px;
     min-width: 180px;

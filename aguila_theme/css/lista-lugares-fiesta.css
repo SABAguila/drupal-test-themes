@@ -218,8 +218,12 @@
 
 .container-map {
     text-align: right;
-    padding-right: 8%;
+    margin-top: 56px;
+    margin-bottom: 88px;
 }
+.container-map .view-map-all{
+  margin-right: 4%;
+} 
 .container-map .view-map-all>span{
   margin-right: 12px;
 } 
