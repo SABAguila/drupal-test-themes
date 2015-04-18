@@ -15,15 +15,21 @@
     text-align: center;
 }
 
-.lista-lugares-fiesta .view-content ul  li {
-    margin: 0 5px 15px;
-    position: relative;
-    display: inline-block !important; /* IE overrides the display when loading new elements with "Cargar Mas" */
-}
 
 .lista-lugares-fiesta  .view-content ul  li {
-    width: 270px;
-    margin: 0 14px 50px;
+    border:1px solid #efefef;
+    width: 374;
+    margin: 0 13px 26px;
+}
+
+.lista-lugares-fiesta  .view-content ul  li div div a{
+    display: block;
+    width: 100%;
+}
+
+.lista-lugares-fiesta  .view-content ul  li div div a img{
+    height: auto;
+    width: 100%;
 }
 
 

@@ -37,10 +37,9 @@
 
     function unsortTilesEvents(){
 
-        var container = document.querySelector('.view-lista-de-lugares-de-fiesta');
+        var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content');
         var msnry = new Masonry( container, {
-          // options
-          columnWidth: 200,
+          // options          
           itemSelector: 'li'
         });
         
