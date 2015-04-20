@@ -18,7 +18,7 @@
 
 .lista-lugares-fiesta  .view-content ul  li {
     border:1px solid #efefef;
-    border-bottom: 5px solid #5693b2;    
+    border-bottom: 5px solid #5693b2; 
     margin: 0 13px 26px;
 }
 
@@ -173,7 +173,7 @@
     color: #9d9d9d;
     float: left;
     display: block;
-    margin: 20px 10px 0 0;
+    margin: 28px 10px 0 0;
     padding: 0; 
 }
 
@@ -183,7 +183,7 @@
     height: 25px;
     width: 25px;
     background: #3b5a9b;
-    margin: 5px 5px 0 0;
+    margin: 15px 5px 0 0;
 }
 .lista-lugares-fiesta  .view-content ul li .views-field-field-twitter{
     display: block;
@@ -191,7 +191,7 @@
     height: 25px;
     width: 25px;
     background: #2b97f0;
-    margin: 5px 0 0 0;
+    margin: 15px 0 0 0;
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-field-facebook img,
@@ -203,7 +203,7 @@
 .lista-lugares-fiesta  .view-content ul li  .views-field-field-tipo-de-lugar{
     float: left;
     display: block;
-    margin: 15px 5px 0 20px;
+    margin: 20px 5px 0 20px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-body-1{
