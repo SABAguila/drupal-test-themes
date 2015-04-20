@@ -10,7 +10,7 @@
 }
 
 .calendario-chicas-aguila .date-nav-wrapper .date-heading {
-    text-align: right;
+    text-align: left;
     padding-right: 106px;
     margin-top: 15px;
 }
@@ -19,19 +19,22 @@
     font-family: "Open Sans";
     font-weight: 900;
     font-size: 28px;
-    text-align: right;
+    text-align: left;
     display: none;
+    margin-left: 77px;
 }
 .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
     display: block;
+    color: #fff;
 }
 
 #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-prev {
-    left: auto;
-    right: 73px;
+    left: 0;
+    right: auto;
 }
 
 #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-next {
+    left: 285px;
     right: 38px;
 }
 
@@ -298,6 +301,7 @@ tr.single-day td.evento-selected .inner {
 
 .evento-calendario .title {
     font-size: 14px;
+    display: none;
 }
 
 .evento-calendario .title em {
@@ -323,6 +327,10 @@ tr.single-day td.evento-selected .inner {
 }
 
 .chicas-aguila .calendar-calendar td.evento-selected.single-day .view-item .cutoff {
+
+}
+
+.chicas-aguila .calendar-calendar td.evento-selected.single-day .view-item .cutoff {
     display: block !important;
     left: 50%;
     margin-left: -20px;
@@ -331,15 +339,15 @@ tr.single-day td.evento-selected .inner {
 }
 
 .chicas-aguila .calendar-calendar .evento-calendario-overlay {
-    background-color: #ffd800 !important;
+    background-color: #0565be !important;
     overflow: visible;
     position: absolute;
-    width: 200px;
+    width: 120px;
     top: -235px;
     left: 50%;
     z-index: 4;
     margin-left: -100px !important;
-    min-height: 255px;
+    min-height: 67px;
 }
 
 .chicas-aguila .calendar-calendar div.evento-calendario-overlay.forceup {
@@ -367,11 +375,14 @@ tr.single-day td.evento-selected .inner {
     position: absolute;
     pointer-events: none;
     border-color: rgba(255, 216, 0, 0) !important;
-    border-top-color: #ffd800 !important;
+    border-top-color: #0565be !important;
     border-left-color: transparent !important;
     border-width: 10px !important;
     margin-top: -10px;
     margin-left: -10px;
+    -ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .chicas-aguila .calendar-calendar .month-view .full td .inner div.calendar.monthview div.banner {
@@ -418,8 +429,9 @@ tr.single-day td.evento-selected .inner {
 .chicas-aguila .dzscalendar .evento-calendario-overlay em,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay em {
     font-weight: 300;
-    font-size: 60%;
-    font-style: normal;
+    font-size: 80%;
+    font-style: italic;
+    font-family: Dubiel,Georgia,Times,serif;
 }
 
 .chicas-aguila .dzscalendar .evento-calendario-overlay strong,
@@ -654,7 +666,10 @@ body.chicas-aguila .calendario-chicas-aguila #mobile-calendar.calendarContainer.
         bottom: 46%;
         border-color: rgba(255, 216, 0, 0) !important;
         border-top-color: transparent !important;
-        border-left-color: #ffd800 !important;
+        border-left-color: #0565be !important;
+        -ms-transform: rotate(90deg); 
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
 
     .chicas-aguila .calendar-calendar .single-day .view-item .cutoff,
@@ -681,6 +696,8 @@ body.chicas-aguila .calendario-chicas-aguila #mobile-calendar.calendarContainer.
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar.transformado{
     position: relative;
     width: 630px;
+    margin-left: 440px;
+    top: -180px;
 }
 
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar th.days{
@@ -720,6 +737,15 @@ body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.single-day .i
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.single-day.today .inner{
     border-color: #fff;    
 }
+body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.single-day.today .inner .hoy{
+    color: #0565be;
+    margin-top: 37px;
+    width: 100%;
+    text-align: center;
+    font-family: Dubiel,Georgia,Times,serif;
+    font-style: italic;
+    font-size: 17px;
+}
 
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.empty{
     visibility: hidden;
@@ -731,6 +757,22 @@ body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.date-box{
     font-weight: bold;
     text-align: center;
     width: 100%;
+}
+
+body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.date-box.amarillo .month.day {
+    color: #0fc3ff;
+    font-size: 27px;
+    margin-top: 21px;
+    left: 20px;
+    position: relative;
+}
+
+body.chicas-aguila .calendario-chicas-aguila .calendar-calendar td.date-box.celeste .month.day {
+    color: #0fc3ff;
+    font-size: 27px;
+    margin-top: 21px;
+    left: 20px;
+    position: relative;
 }
 
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar div.day{
