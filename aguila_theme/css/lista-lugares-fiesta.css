@@ -116,8 +116,8 @@
 
 .lista-lugares-fiesta  .view-content ul li .party-icon {
     background-image: url(../images/sprite-categories.png);
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .party-icon-Hotel {
@@ -126,7 +126,7 @@
 
 .lista-lugares-fiesta  .view-content ul li .party-icon-Eventos,
 .lista-lugares-fiesta  .view-content ul li .party-icon-Evento {
-    background-position: -80px -40px;
+    background-position: -90px -50px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .party-icon-Restaurante {
@@ -173,8 +173,8 @@
     color: #9d9d9d;
     float: left;
     display: block;
-    margin: 20px 10px 0 20px;
-    padding: 0 0 0 15px; 
+    margin: 20px 10px 0 0;
+    padding: 0; 
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-field-facebook{
@@ -183,6 +183,7 @@
     height: 25px;
     width: 25px;
     background: #3b5a9b;
+    margin: 5px 5px 0 0;
 }
 .lista-lugares-fiesta  .view-content ul li .views-field-field-twitter{
     display: block;
@@ -190,12 +191,19 @@
     height: 25px;
     width: 25px;
     background: #2b97f0;
+    margin: 5px 0 0 0;
+}
+
+.lista-lugares-fiesta  .view-content ul li .views-field-field-facebook img,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-twitter img{
+    width: 100%;
+    height: auto;
 }
 
 .lista-lugares-fiesta  .view-content ul li  .views-field-field-tipo-de-lugar{
     float: left;
     display: block;
-    margin: 20px 10px 0 20px;
+    margin: 15px 5px 0 20px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-body-1{
@@ -323,6 +331,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+    .lista-lugares-fiesta  .view-content{
+        max-width: 1200px;
+        width: 100%;
+    }
     .lista-lugares-fiesta  .view-content ul  li {        
         width: 370px;        
     }
