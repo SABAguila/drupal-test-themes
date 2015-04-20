@@ -139,10 +139,9 @@
                     iwCloseBtn.css({
                         opacity: '1', // by default the close button has an opacity of 0.7
                         right: '38px',
-                        top: '3px', // button repositioning
-                        border: '7px solid #48b5e9', // increasing button border and new color
+                        top: '3px', // button repositioning                        
                         'border-radius': '13px', // circular effect
-                        'box-shadow': '0 0 5px #3990B9' // 3D effect to highlight the button
+                        'box-shadow': 'rgb(11, 93, 153) 0px 0px 5px' // 3D effect to highlight the button
                         
                     });
 
