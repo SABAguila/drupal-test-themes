@@ -27,6 +27,11 @@
             }
             e.preventDefault();
         });
+        $(".field-name-field-link-seguir-leyendo").on("click touch","a",function(e){
+            $(" .node-fiestas .content .field-item p").show();
+            $(".node-fiestas .field-name-field-link-seguir-leyendo a").hide();
+            e.preventDefault();
+        });
 
     });
 }(jQuery2));
