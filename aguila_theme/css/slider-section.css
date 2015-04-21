@@ -69,8 +69,9 @@
     vertical-align: middle;
     padding: 30px 10px;
 }
-body.page-node-606 .slick-initialized .slide-content{/*Styles for Festival Vallenato*/
-    color: #0059bc;
+body.page-node-606 .slick-initialized .slide-content,
+body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{/*Styles for Festival Vallenato*/
+    color: #0059bc!important;
 }
 
 .slide-main-content {
@@ -101,10 +102,9 @@ body.page-node-606 .slick-initialized .slide-content{/*Styles for Festival Valle
 .slide-content h3 {
     padding: 0;
     margin: 0 0 10px;
-    font: normal 250%/28px 'ITCAvantGardePro';
+    font: normal 150%/28px 'ITCAvantGardePro';
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
 }
-
 .slide-content .transform-like-module,
 .slide-content .video-link {
     background-color: transparent !important;
