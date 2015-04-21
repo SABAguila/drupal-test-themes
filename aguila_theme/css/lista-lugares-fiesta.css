@@ -321,7 +321,11 @@
 @media only screen and (min-width : 480px) {
 
 }
-
+@media only screen and (min-width : 600px) {
+    .node-fiestas .field-name-field-link-seguir-leyendo a{
+        display: none;
+    }
+}
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .lista-lugares-fiesta  .view-content{

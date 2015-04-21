@@ -73,6 +73,17 @@ body.page-node-606 .slick-initialized .slide-content,
 body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{/*Styles for Festival Vallenato*/
     color: #0059bc!important;
 }
+body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+}
+
+body.page-node-606 .slick-initialized .slide-content .favoritos-content-type p{
+    margin-top: 27px;
+    font-weight: bold;  
+}
+ 
 
 .slide-main-content {
     overflow: hidden;
