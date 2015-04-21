@@ -181,16 +181,14 @@
     display: block;
     float: left;
     height: 25px;
-    width: 25px;
-    background: #3b5a9b;
+    width: 25px;   
     margin: 15px 5px 0 0;
 }
 .lista-lugares-fiesta  .view-content ul li .views-field-field-twitter{
     display: block;
     float: left;
     height: 25px;
-    width: 25px;
-    background: #2b97f0;
+    width: 25px;   
     margin: 15px 0 0 0;
 }
 
@@ -271,6 +269,7 @@
 .node-fiestas .field-name-field-twitter img{
     width: 90%;
     height: auto;
+    cursor: pointer;
 }
 .node-fiestas .field-name-field-texto-compartir{
     margin-right: 21px;
@@ -290,6 +289,22 @@
 } 
 /* @group Media Query */
 
+@media only screen and (max-width : 600px) {
+    .node-fiestas .field-name-field-link-seguir-leyendo a{
+        display: block;
+            color: #0059bc;
+       
+        text-decoration: none;
+        font-size: 118%;
+         display: block;
+    }
+    .node-fiestas .content .field-item p{
+        display: none;
+    }
+    .node-fiestas .content .field-item p:nth-child(-n+3){
+        display: block;
+    }
+}
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
     .lista-lugares-fiesta  .view-content{
