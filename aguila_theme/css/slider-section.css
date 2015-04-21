@@ -69,6 +69,9 @@
     vertical-align: middle;
     padding: 30px 10px;
 }
+body.page-node-606 .slick-initialized .slide-content{/*Styles for Festival Vallenato*/
+    color: #0059bc;
+}
 
 .slide-main-content {
     overflow: hidden;
