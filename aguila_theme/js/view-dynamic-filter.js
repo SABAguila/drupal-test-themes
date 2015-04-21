@@ -4,7 +4,8 @@
     
     $.initModule(node, function ($, filters) {
         filters.on('click', '.filter', function(e) {
-            e.preventDefault();
+            e.returnValue = false;
+            e.preventDefault();             
             $=jQuery2;
             jq=jQuery;
             var $this = $(this),
