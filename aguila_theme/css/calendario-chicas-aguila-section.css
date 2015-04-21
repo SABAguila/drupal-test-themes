@@ -19,11 +19,12 @@
     font-family: "Open Sans";
     font-weight: 900;
     font-size: 28px;
-    text-align: left;
+    text-align: center;
     display: none;
-    margin-left: 77px;
+    margin-left: 37px;
+    width: 250px;
 }
-.calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
+.chicas-aguila .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
     display: block;
     color: #fff;
 }
@@ -68,11 +69,11 @@
 }
 
 #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-prev a {
-    background: transparent no-repeat center center url(../images/dzscalendar/arrowline-left-simple.png);
+    background: transparent no-repeat center center url(/sites/g/files/ogq1136/f/201504/arrowline-left-simple.png);
 }
 
 #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-next a {
-    background: transparent no-repeat center center url(../images/dzscalendar/arrowline-right-simple.png);
+    background: transparent no-repeat center center url(/sites/g/files/ogq1136/f/201504/arrowline-right-simple.png);
 }
 
 .banner-calendario-chicas-aguila {
@@ -233,12 +234,16 @@
     border: none;
 }
 
-.chicas-aguila .calendar-calendar .month-view .full tr.single-day td.amarillo {
-    background-color: #ffd800;
+.chicas-aguila .calendar-calendar .month-view .full td.single-day div.monthview .cutoff{
+    visibility: hidden;
 }
 
-.chicas-aguila .calendar-calendar .month-view .full tr.single-day td.celeste {
-    background-color: #2cd5ff;
+.chicas-aguila .calendar-calendar .month-view .full tr.single-day .amarillo {
+    background-color: #0565be;
+}
+
+.chicas-aguila .calendar-calendar .month-view .full tr.single-day .celeste {
+    background-color: #0565be;
 }
 
 .chicas-aguila .calendar-calendar .month-view .full tr.single-day td.blanco {
@@ -271,7 +276,7 @@ tr.single-day td.evento-selected .inner {
 
 
 .chicas-aguila .calendar-calendar .evento-calendario {
-    padding: 25px 0 0 !important;
+    padding: 10px 0 0 !important;
     text-align: center;
 }
 
@@ -343,8 +348,8 @@ tr.single-day td.evento-selected .inner {
     overflow: visible;
     position: absolute;
     width: 120px;
-    top: -235px;
-    left: 50%;
+    top: -107px;
+    left: -25px;
     z-index: 4;
     margin-left: -100px !important;
     min-height: 67px;
@@ -367,7 +372,7 @@ tr.single-day td.evento-selected .inner {
 
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .box-arrow {
     left: 50%;
-    bottom: -20px;
+    bottom: -19px;
     border: solid transparent !important;
     content: " ";
     height: 0;
@@ -387,7 +392,7 @@ tr.single-day td.evento-selected .inner {
 
 .chicas-aguila .calendar-calendar .month-view .full td .inner div.calendar.monthview div.banner {
     background-size: cover;
-    padding: 12px 20px;
+    padding: 8px 20px;
 }
 
 .chicas-aguila .dzscalendar div.banner{
@@ -423,7 +428,7 @@ tr.single-day td.evento-selected .inner {
 
 .chicas-aguila .dzscalendar .evento-calendario-overlay .title,
 .chicas-aguila .calendar-calendar .evento-calendario-overlay .title {
-    padding-top: 15px;
+    padding-top: 0;
 }
 
 .chicas-aguila .dzscalendar .evento-calendario-overlay em,
@@ -554,150 +559,18 @@ body.chicas-aguila .calendario-chicas-aguila #mobile-calendar.calendarContainer.
 
 /* @end */
 
-/* @group Media Query */
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-    .banner-calendario-chicas-aguila h3,
-    .banner-calendario-chicas-aguila h4 {
-        font-size: 40px;
-    }
-    .banner-calendario-chicas-aguila .content p {
-        width: 100%;
-    }
-    
-    .banner-calendario-chicas-aguila .media-thumbnail-frame {
-        position: relative;
-    }
-    
-    .calendario-chicas-aguila {
-        padding: 25px 20px 20px;
-    }
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-    .banner-calendario-chicas-aguila h3,
-    .banner-calendario-chicas-aguila h4 {
-        font-size: 55px;
-    }
-
-    .banner-calendario-chicas-aguila .media-thumbnail-frame {
-        position: absolute;
-    }
-
-    .banner-calendario-chicas-aguila .content p {
-        width: 55%;
-    }
-
-    .calendario-chicas-aguila {
-        padding: 25px 30px 30px;
-    }
-        
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 600px) {
-    #mobile-calendar {
-        display: none;
-    }
-    
-    .chicas-aguila .calendar-calendar {
-        display: block;
-    }
-
-    #block-views-calendario-chicas-aguila-block {
-      background-color: cornflowerblue;
-      position: relative;
-
-      
-      /*erase later*/
-      overflow: hidden;
-
-    }    
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-    .banner-calendario-chicas-aguila h3,
-    .banner-calendario-chicas-aguila h4 {
-        font-size: 70px;
-    }
-
-    .banner-calendario-chicas-aguila {
-        width: 652px;
-    }
-    
-    .evento-calendario .icon {
-        display: block;
-    }
-
-    .evento-calendario .title {
-        font-size: 18px;
-    }
-    
-
-}
-    
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-    .chicas-aguila .calendar-calendar .evento-calendario-overlay {
-        top: -75px;
-        left: -160px;
-        margin-left: 0 !important
-    }
-
-
-    .banner-calendario-chicas-aguila {
-        min-height: 200px;
-    }
-
-    .chicas-aguila .calendar-calendar .evento-calendario-overlay .box-arrow {
-        left: 210px;
-        bottom: 46%;
-        border-color: rgba(255, 216, 0, 0) !important;
-        border-top-color: transparent !important;
-        border-left-color: #0565be !important;
-        -ms-transform: rotate(90deg); 
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-
-    .chicas-aguila .calendar-calendar .single-day .view-item .cutoff,
-    .chicas-aguila .calendar-calendar td.evento-selected.single-day .view-item .cutoff {
-        display: block !important;
-    }
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-    .calendario-chicas-aguila {
-        padding: 25px 0 40px 0;
-    }
-}
-/* @end */
 
 
 /*Custom theme calendar*/
-
 
 /*Calendar*/
 
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar.transformado{
     position: relative;
-    width: 630px;
-    margin-left: 440px;
-    top: -180px;
+    width: 590px;
+    margin-left: 337px;
+    top: -100px;
 }
 
 body.chicas-aguila .calendario-chicas-aguila .calendar-calendar th.days{
@@ -805,14 +678,331 @@ body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-agui
     height: auto;
     width: 100%;
 }
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .pdf-link{
+    z-index: 5;
+    position: relative;
+}
 
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .content{
     position: relative;
     z-index: 5;
+    pointer-events: none;
 }
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .content h3{
     color: #fff;
 }
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila p:first-of-type { 
+    margin-top: 80px;
+}
 
-
+body.chicas-aguila .calendario-chicas-aguila .date-nav-wrapper{ 
+    margin-top: -155px;
+}
+body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
+    color: #fff;
+    position: relative;
+    left: 60px;
+    font-weight: 300;
+}
 /*End custom theme calendar*/
+
+
+
+
+
+
+
+
+
+/* @group Media Query */
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .calendario-chicas-aguila {
+        padding: 25px 0 40px 0;
+    }
+}
+
+
+@media only screen and (max-width : 1024px) {
+    body.chicas-aguila .calendario-chicas-aguila .calendar-calendar.transformado{
+        margin-left: 337px;
+        top: -100px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    body.chicas-aguila .calendario-chicas-aguila .calendar-calendar.transformado{
+        margin-left: 337px;
+        top: -100px;
+    }
+
+    .chicas-aguila .calendar-calendar .evento-calendario-overlay {
+        top: -107px;
+        left: -25px;
+        margin-left: 0 !important
+    }
+
+
+    .banner-calendario-chicas-aguila {
+        min-height: 200px;
+    }
+
+    .chicas-aguila .calendar-calendar .evento-calendario-overlay .box-arrow {
+        left: 58px;
+        bottom: -19px;
+        border-color: rgba(255, 216, 0, 0) !important;
+        border-top-color: transparent !important;
+        border-left-color: #0565be !important;
+        -ms-transform: rotate(90deg); 
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .chicas-aguila .calendar-calendar .single-day .view-item .cutoff,
+    .chicas-aguila .calendar-calendar td.evento-selected.single-day .view-item .cutoff {
+        display: block !important;
+    }
+
+}
+
+@media only screen and (max-width : 992px) and (orientation : portrait) {
+    body.chicas-aguila .calendario-chicas-aguila .date-nav-wrapper {
+        margin-top: -200px;
+    }
+}
+
+@media only screen and (max-width : 736px) {
+
+    body.chicas-aguila #main .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila p:first-of-type {
+        margin-top: 0;
+        color: #000;
+    }
+
+    body.chicas-aguila #main .calendario-chicas-aguila .date-nav-wrapper {
+        margin-top: 0;
+    }
+
+    #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-next {
+        right: 0;
+        left: 90%;
+    }
+
+    .chicas-aguila .calendario-chicas-aguila .date-nav-wrapper .date-heading h3 {
+        margin-left: 25%;
+    }
+
+    a.btn {
+        width: 100%;
+    }
+
+    #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-prev a {
+        background: transparent no-repeat center center url(../images/dzscalendar/arrowline-left-simple.png);
+    }
+
+    #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-next a {
+        background: transparent no-repeat center center url(../images/dzscalendar/arrowline-right-simple.png);
+    }
+
+}
+@media only screen and (max-width : 736px) and (orientation: landscape){
+    .banner-calendario-chicas-aguila .content p {
+        color: #fff;
+    }
+    body.chicas-aguila #main .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila p:first-of-type {
+        color: #fff;
+    }
+    body.chicas-aguila #main .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .content h3 {
+        color: #fff;
+    }
+
+    .banner-calendario-chicas-aguila h3 em {
+        color: #fff;
+    }
+
+    .chicas-aguila .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
+        color: #fff;
+    }
+
+    body.chicas-aguila .calendario-chicas-aguila .calendar-calendar.transformado {
+        margin-left: 0;
+        top: 0;
+        margin-top: 88px;
+    }
+    .chicas-aguila .calendar-calendar .evento-calendario-overlay {
+        left: 73px;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 600px) {
+    #mobile-calendar {
+        display: none;
+    }
+
+    .chicas-aguila .calendar-calendar {
+        display: block;
+    }
+
+    .calendario-chicas-aguila .date-nav-wrapper .date-heading {
+        padding-right: 50px;
+    }
+    
+    #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-next {
+        right: 0;
+    }
+
+    #block-views-calendario-chicas-aguila-block {
+      background-color: cornflowerblue;
+      position: relative;
+
+      
+      /*erase later*/
+      overflow: hidden;
+
+    }    
+}
+@media only screen and (min-width : 768px) {
+
+    .banner-calendario-chicas-aguila h3,
+    .banner-calendario-chicas-aguila h4 {
+        font-size: 70px;
+    }
+
+    .banner-calendario-chicas-aguila {
+        width: 652px;
+    }
+    
+    .evento-calendario .icon {
+        display: block;
+    }
+
+    .evento-calendario .title {
+        font-size: 18px;
+    }
+    
+}
+@media only screen and (min-width : 768px) and (orientation : portrait){
+    body.chicas-aguila .calendario-chicas-aguila .calendar-calendar.transformado {
+        margin-left: 0;
+        top: 0;
+        margin-top: 88px;
+    }
+    .chicas-aguila .calendar-calendar .evento-calendario-overlay {
+        left: 73px;
+    }
+}
+
+@media only screen and (min-width : 600px) and (orientation : landscape){
+    
+}
+@media only screen and (max-width : 600px) {
+
+    body.chicas-aguila #main .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .content h3 {
+        color: #0689b5;
+    }
+
+    .banner-calendario-chicas-aguila h3 em {
+        color: #0689b5;
+    }
+
+    .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
+        color: #000;
+    }
+    .chicas-aguila .calendar-calendar .evento-calendario-overlay {
+        left: 73px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 568px) and (orientation: landscape){
+    body.chicas-aguila #main .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila p:first-of-type {
+        color: #000;
+    }
+    body.chicas-aguila #main .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .content h3 {
+        color: #0689b5;
+    }
+
+    .banner-calendario-chicas-aguila h3 em {
+        color: #0689b5;
+    }
+
+    .chicas-aguila .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
+        color: #000;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+    .banner-calendario-chicas-aguila h3,
+    .banner-calendario-chicas-aguila h4 {
+        font-size: 55px;
+    }
+
+    .banner-calendario-chicas-aguila .media-thumbnail-frame {
+        position: absolute;
+    }
+
+    .banner-calendario-chicas-aguila .content p {
+        width: 55%;
+    }
+
+    .calendario-chicas-aguila {
+        padding: 25px 30px 30px;
+    }
+    
+    .calendario-chicas-aguila .date-nav-wrapper .date-heading {
+        padding-right: 50px;
+    }
+
+    .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
+        color: #000;
+    }
+
+    #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-next {
+        right: 0;
+    }    
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 414px) and (orientation : portrait){
+    .chicas-aguila .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
+        color: #000;
+    }
+    
+}
+@media only screen and (max-width : 320px) {
+    .banner-calendario-chicas-aguila h3,
+    .banner-calendario-chicas-aguila h4 {
+        font-size: 40px;
+    }
+    .banner-calendario-chicas-aguila .content p {
+        width: 100%;
+        color: #000;
+    }
+
+    .banner-calendario-chicas-aguila .media-thumbnail-frame {
+        position: relative;
+    }
+    
+    .calendario-chicas-aguila {
+        padding: 25px 20px 20px;
+    }
+
+    .calendario-chicas-aguila .date-nav-wrapper .date-heading {
+        padding-right: 50px;
+    }
+
+    .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
+        color: #000;
+    }
+
+    #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-next {
+        right: 0;
+    }
+}
+
+/* @end */
+
