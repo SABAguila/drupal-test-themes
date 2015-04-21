@@ -102,7 +102,7 @@ body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{/*S
 .slide-content h3 {
     padding: 0;
     margin: 0 0 10px;
-    font: normal 150%/28px 'ITCAvantGardePro';
+    font: normal 250%/28px 'ITCAvantGardePro';
     font-family: 'ITCAvantGardePro', Helvetica, Arial sans-serif;
 }
 .slide-content .transform-like-module,
@@ -407,7 +407,7 @@ body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{/*S
     .slide-content h3 {
         padding: 0;
         margin: 6px 0;
-        font-size: 690%;
+        font-size: 530%;
         line-height: 80px;
     }
 
