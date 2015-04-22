@@ -41,7 +41,7 @@ ul#social li:last-of-type{
 div.information{
     background:#efcb00;
     color:rgba(11, 93, 153, 1);
-    padding: 5px;
+    padding: 2px 0;
 }
 div.information>div {
   text-align: left;
@@ -113,7 +113,7 @@ div.information>div {
 
 @media only screen and (max-width : 500px) {
     .gm-style-iw {
-        width: 159px !important;
+        width: 153px !important;
         top: 0px !important;
         left: 17px !important;
         background-color: rgba(0, 170, 216, 0.77);
@@ -125,7 +125,7 @@ div.information>div {
         margin-top: 16px;
     }
     .map-info-window h1{
-        width: 159px;
+        width: 153px;
         font-size:100%;
     }
     ul#social li:first-of-type{

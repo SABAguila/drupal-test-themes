@@ -26,9 +26,37 @@
                 ratingParent = rating.parent();
                 rating.remove();
                 ratingParent.prepend('<span>' + rating.text().replace('/5', '') + '</span>');
-            }
+                
+            }           
         });
+        
+        var clase_tipo_evento = $('.view-lista-de-lugares-de-fiesta li .views-field-field-tipo-de-lugar .field-content').find('div');
+        $.each(clase_tipo_evento, function(index, value){
+            var clases = $(this).attr('class');
+            $(this).closest('li').addClass(clases);
+        });
+
     }
+
+    function unsortTilesEvents(){
+        
+        var wrapList = $('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
+
+        if( wrapList.length > 0 ){
+            
+            var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');            
+            var msnry = new Masonry( container, {         
+                itemSelector: 'li'              
+            });
+
+            setTimeout(function(){ 
+                msnry.reloadItems();
+                msnry.layout();  
+            }, 700);            
+        }
+    }
+
+    
     
     function validGeolocation(value) {
         return value !== undefined && value !== null && value !== '';
@@ -41,6 +69,14 @@
         centerLatlng = latlngbounds.getCenter();
         map.setCenter(centerLatlng);
         map.fitBounds(latlngbounds); 
+    }
+
+    function convertDate(date){
+        date = date.split(' ');
+        date = date[0].split('-');
+        var arrayMonths = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+        var newDate = date[2] + ' ' + arrayMonths[date[1]-1] + ' ' + date[0];
+        return newDate;
     }
     
     function updateMapMarkers() {
@@ -61,13 +97,17 @@
             if (validGeolocation(node.data('latitude')) && validGeolocation(node.data('longitude'))) {
                 var position = new google.maps.LatLng(parseFloat(node.data('latitude')),parseFloat(node.data('longitude')));
                 var iconBase = '/sites/g/files/ogq1136/f/201504/';
+                var fechaFiesta = convertDate(node.data('fecha'));
+                var horarioFecha = node.data('horario');
+                var lugarFiesta = node.data('lugar');
+                var cuidadFiesta = node.data('ciudad');
                 var marker = new google.maps.Marker({
                     position: position,
                     title: node.data('placename'),
                     icon: iconBase + 'markerMaps.png'
                 });
                 infowindow = new google.maps.InfoWindow({
-                    content: '<div class="lugar-info-window map-info-window"><img src="/sites/g/files/ogq1136/f/201504/CarnavalTooltipImg.png"><h1>' + node.data('placename') + '</h1><ul id="social"><li class="facebook"></li><li class="twitter"></li></ul></div>',
+                    content: '<div class="lugar-info-window map-info-window"><img src="/sites/g/files/ogq1136/f/201504/CarnavalTooltipImg.png"><h1>' + node.data('placename') + '</h1><ul id="social"><li class="facebook"></li><li class="twitter"></li></ul><div class="information"><div class="fecha"><strong>Fecha:</strong> '+fechaFiesta+'</div><div class="horario"><strong>Hora:</strong> '+horarioFecha+'</div><div class="ciudad"><strong>Ciudad:</strong> '+cuidadFiesta+'</div><div class="lugar"><strong>Lugar:</strong> '+lugarFiesta+'</div></div></div>',
                     maxWidth : 215
                 });
                 node.data("marker",marker);
@@ -127,10 +167,6 @@
                         'box-shadow': 'rgb(11, 93, 153) 0px 0px 5px' // 3D effect to highlight the button
                         
                     });
-                    iwCloseBtn.next().css({
-                        right: '15%',
-                        'width': '40px'
-                    });
 
                     // The API automatically applies 0.7 opacity to the button after the mouseout event.
                     // This function reverses this event to the desired value.
@@ -176,8 +212,10 @@
     }
     $.initModule('.lista-lugares-fiesta', function () {
         transformar();
+        unsortTilesEvents();
         jq(document).ajaxComplete(function () {
-            setTimeout(transformar, 50)
+            setTimeout(transformar, 50);
+            unsortTilesEvents();
         });
         $.mapsLoaded.promise().then(function () {
             updateMapMarkers();
