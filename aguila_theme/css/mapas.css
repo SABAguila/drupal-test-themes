@@ -93,21 +93,16 @@ ul#social li:last-of-type{
 
 
 /*Map Customization*/
-.gm-style-iw {
-    width: 214px !important;
-    top: 0px !important;
-    left: 17px !important;
-    background-color: rgba(0, 170, 216, 0.77);
-    box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
-    border-radius: 2px;
-}
+
 
 /* @group Media Query */
+@media only screen and (max-width : 320px) {
 
+}
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
     .mapa-lugar-detalle {
-        min-height: 300px;
+        min-height: 372px;
     }
 }
 
@@ -142,6 +137,14 @@ ul#social li:last-of-type{
 @media only screen and (min-width : 768px) {
     .mapa-lugar-detalle {
         min-height: 500px;
+    }
+    .gm-style-iw {
+        width: 214px !important;
+        top: 0px !important;
+        left: 17px !important;
+        background-color: rgba(0, 170, 216, 0.77);
+        box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+        border-radius: 2px;
     }
 }
 
