@@ -53,7 +53,7 @@
             setTimeout(function(){ 
                 msnry.reloadItems();
                 msnry.layout();  
-            }, 500);            
+            }, 700);            
         }
     }
 
