@@ -30,60 +30,26 @@
             }           
         });
         
-        //trigger unsorted tiles
-        unsortTilesEvents();
+        
 
     }
 
     function unsortTilesEvents(){
-
-
-
-        var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
-
-        console.log(container);
-
-        var msnry = new Masonry( container, {
-          // options          
-          itemSelector: 'li'
-          
-        });
-
-        setTimeout(function(){ 
-            msnry.reloadItems();
-            msnry.layout();  
-        }, 500);
-
-       //container.masonry('reload');
-       /*imagesLoaded( container, function() {
-          msnry.reloadItems();   
-          msnry.layout(); 
-        });*/
-
         
-       
-        /*jq(window).load(function(){
+        var wrapList = $('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
 
-            var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
-            var msnry = new Masonry( container, {
-              // options          
-              itemSelector: 'li'
-              
+        if( wrapList.length > 0 ){
+            
+            var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');            
+            var msnry = new Masonry( container, {         
+                itemSelector: 'li'              
             });
 
-        });*/
-
-        /*var msnry;
-        imagesLoaded( container, function() {
-          msnry = new Masonry( container, {
-             itemSelector: 'li'
-          });
-        });*/
-
-
-
-        /*masonry.reloadItems();
-        masonry.layout();  */     
+            setTimeout(function(){ 
+                msnry.reloadItems();
+                msnry.layout();  
+            }, 500);            
+        }
     }
 
     
@@ -230,8 +196,10 @@
     }
     $.initModule('.lista-lugares-fiesta', function () {
         transformar();
+        unsortTilesEvents();
         jq(document).ajaxComplete(function () {
-            setTimeout(transformar, 50)
+            setTimeout(transformar, 50);
+            unsortTilesEvents();
         });
         $.mapsLoaded.promise().then(function () {
             updateMapMarkers();
