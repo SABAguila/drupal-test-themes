@@ -699,21 +699,42 @@ body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-agui
 
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile{
     min-height: 200px;
+    margin-top: 20px;
 }
 
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile .number{
     text-align: center;
     font-size: 45px;
+    position: relative;
+    z-index: 1;
 }
 
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile .day{
     text-align: center;
     font-size: 25px;
+    position: relative;
+    z-index: 1;
 }
 
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile .evento{
     color: #ffd800;
     margin-top: 40px;
+    margin-left: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile .title{
+    margin-left: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile .filtro{
+    position: absolute;
+    background: rgba(16, 106, 181, 0.6);
+    height: 100%;
+    width: 100%;
 }
 
 body.chicas-aguila .calendario-chicas-aguila .date-nav-wrapper{ 
