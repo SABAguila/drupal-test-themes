@@ -126,32 +126,32 @@
     background-size: 100%;
 }
 
-.lista-lugares-fiesta  .view-content ul li > .party-icon {
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon {
     background-image: url(../images/sprite-categories.png);
     width: 20px;
     height: 20px;
 }
 
-.lista-lugares-fiesta  .view-content ul li > .party-icon.party-icon-Hotel,
-.lista-lugares-fiesta  .view-content ul li > .party-icon-Hoteles {
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Hotel,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon-Hoteles {
     background-position: -80px 0;
 }
 
-.lista-lugares-fiesta  .view-content ul li > .party-icon.party-icon-Eventos,
-.lista-lugares-fiesta  .view-content ul li > .party-icon.party-icon-Evento {
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Eventos,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Evento {
     background-position: -90px -50px;
 }
 
-.lista-lugares-fiesta  .view-content ul li > .party-icon.party-icon-Restaurante {
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Restaurante {
     background-position: -80px -80px;
 }
 
-.lista-lugares-fiesta  .view-content ul li > .party-icon.party-icon-2x1 {
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-2x1 {
     background-position: -80px -120px;
 }
 
-.lista-lugares-fiesta  .view-content ul li > .party-icon.party-icon-Bar,
-.lista-lugares-fiesta  .view-content ul li > .party-icon.party-icon-Bares {
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Bar,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Bares {
     background-position: -80px -160px;
 }
 
