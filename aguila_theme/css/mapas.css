@@ -127,7 +127,7 @@ div.information>div {
     .map-info-window h1{
         width: 152px;
         font-size:100%;
-        margin-top: 5px;
+        margin-top:5px;
     }
     ul#social li:first-of-type{
         background-position: -67% -9px; 
