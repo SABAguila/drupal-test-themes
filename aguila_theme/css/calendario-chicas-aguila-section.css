@@ -687,12 +687,32 @@ body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-agui
     position: relative;
     z-index: 5;
     pointer-events: none;
+    margin-top: 65px;
 }
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .content h3{
     color: #fff;
 }
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila p:first-of-type { 
-    margin-top: 80px;
+    margin-top: 100px;
+}
+
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile{
+    min-height: 200px;
+}
+
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile .number{
+    text-align: center;
+    font-size: 45px;
+}
+
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile .day{
+    text-align: center;
+    font-size: 25px;
+}
+
+body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile .evento{
+    color: #ffd800;
+    margin-top: 40px;
 }
 
 body.chicas-aguila .calendario-chicas-aguila .date-nav-wrapper{ 
@@ -770,6 +790,11 @@ body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
 @media only screen and (max-width : 992px) and (orientation : portrait) {
     body.chicas-aguila .calendario-chicas-aguila .date-nav-wrapper {
         margin-top: -200px;
+    }
+    .chicas-aguila .calendar-calendar .evento-calendario-overlay .box-arrow {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 }
 
