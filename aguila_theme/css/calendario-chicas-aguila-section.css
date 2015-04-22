@@ -700,6 +700,7 @@ body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-agui
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile{
     min-height: 200px;
     margin-top: 20px;
+    position: relative;
 }
 
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile .number{
@@ -732,9 +733,10 @@ body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-agui
 
 body.chicas-aguila .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .popup-evento-mobile .filtro{
     position: absolute;
-    background: rgba(16, 106, 181, 0.6);
-    height: 100%;
+    background: rgba(16,106,181,0.6);
+    min-height: 200px;
     width: 100%;
+    height: 100%;
 }
 
 body.chicas-aguila .calendario-chicas-aguila .date-nav-wrapper{ 
@@ -856,10 +858,6 @@ body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
         left: 90%;
     }
 
-    .chicas-aguila .calendario-chicas-aguila .date-nav-wrapper .date-heading h3 {
-        margin-left: 25%;
-    }
-
     a.btn {
         width: 100%;
     }
@@ -878,18 +876,22 @@ body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
         color: #fff;
     }
     body.chicas-aguila #main .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila p:first-of-type {
-        color: #fff;
+        color: #000;
     }
     body.chicas-aguila #main .calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner-calendario-chicas-aguila .content h3 {
         color: #fff;
     }
-
+    
     .banner-calendario-chicas-aguila h3 em {
         color: #fff;
     }
 
     .chicas-aguila .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
-        color: #fff;
+        color: #000;
+    }
+    
+    .chicas-aguila .calendario-chicas-aguila .date-nav-wrapper .date-heading h3 {
+        margin-left: 15%;
     }
 
     body.chicas-aguila .calendario-chicas-aguila .calendar-calendar.transformado {
@@ -925,8 +927,11 @@ body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
       position: relative;
       /*erase later*/
       overflow: hidden;
+    }   
 
-    }    
+    .popup-evento-mobile {
+        display: none;
+    }
 }
 @media only screen and (min-width : 768px) {
 
