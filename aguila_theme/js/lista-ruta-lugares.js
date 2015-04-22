@@ -29,6 +29,13 @@
                 
             }           
         });
+        
+        var clase_tipo_evento = $('.view-lista-de-lugares-de-fiesta li .views-field-field-tipo-de-lugar .field-content').find('div');
+        $.each(clase_tipo_evento, function(index, value){
+            var clases = $(this).attr('class');
+            $(this).closest('li').addClass(clases);
+        });
+
     }
 
     function unsortTilesEvents(){
@@ -64,6 +71,14 @@
         map.setCenter(centerLatlng);
         map.fitBounds(latlngbounds); 
     }
+
+    function convertDate(date){
+        date = date.split(' ');
+        date = date[0].split('-');
+        var arrayMonths = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+        var newDate = date[2] + ' ' + arrayMonths[date[1]-1] + ' ' + date[0];
+        return newDate;
+    }
     
     function updateMapMarkers() {
         
@@ -83,13 +98,17 @@
             if (validGeolocation(node.data('latitude')) && validGeolocation(node.data('longitude'))) {
                 var position = new google.maps.LatLng(parseFloat(node.data('latitude')),parseFloat(node.data('longitude')));
                 var iconBase = '/sites/g/files/ogq1136/f/201504/';
+                var fechaFiesta = convertDate(node.data('fecha'));
+                var horarioFecha = node.data('horario');
+                var lugarFiesta = node.data('lugar');
+                var cuidadFiesta = node.data('ciudad');
                 var marker = new google.maps.Marker({
                     position: position,
                     title: node.data('placename'),
                     icon: iconBase + 'markerMaps.png'
                 });
                 infowindow = new google.maps.InfoWindow({
-                    content: '<div class="lugar-info-window map-info-window"><img src="/sites/g/files/ogq1136/f/201504/CarnavalTooltipImg.png"><h1>' + node.data('placename') + '</h1><ul id="social"><li class="facebook"></li><li class="twitter"></li></ul></div>',
+                    content: '<div class="lugar-info-window map-info-window"><img src="/sites/g/files/ogq1136/f/201504/CarnavalTooltipImg.png"><h1>' + node.data('placename') + '</h1><ul id="social"><li class="facebook"></li><li class="twitter"></li></ul><div class="information"><div class="fecha"><strong>Fecha:</strong> '+fechaFiesta+'</div><div class="horario"><strong>Hora:</strong> '+horarioFecha+'</div><div class="ciudad"><strong>Ciudad:</strong> '+cuidadFiesta+'</div><div class="lugar"><strong>Lugar:</strong> '+lugarFiesta+'</div></div></div>',
                     maxWidth : 215
                 });
                 node.data("marker",marker);
