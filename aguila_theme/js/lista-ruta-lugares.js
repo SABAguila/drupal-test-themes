@@ -127,6 +127,10 @@
                         'box-shadow': 'rgb(11, 93, 153) 0px 0px 5px' // 3D effect to highlight the button
                         
                     });
+                    iwCloseBtn.next().css({
+                        right: '15%',
+                        'width': '40px'
+                    });
 
                     // The API automatically applies 0.7 opacity to the button after the mouseout event.
                     // This function reverses this event to the desired value.
