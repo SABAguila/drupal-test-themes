@@ -30,60 +30,26 @@
             }           
         });
         
-        //trigger unsorted tiles
-        unsortTilesEvents();
+        
 
     }
 
     function unsortTilesEvents(){
-
-
-
-        var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
-
-        console.log(container);
-
-        var msnry = new Masonry( container, {
-          // options          
-          itemSelector: 'li'
-          
-        });
-
-        setTimeout(function(){ 
-            msnry.reloadItems();
-            msnry.layout();  
-        }, 500);
-
-       //container.masonry('reload');
-       /*imagesLoaded( container, function() {
-          msnry.reloadItems();   
-          msnry.layout(); 
-        });*/
-
         
-       
-        /*jq(window).load(function(){
+        var wrapList = $('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
 
-            var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
-            var msnry = new Masonry( container, {
-              // options          
-              itemSelector: 'li'
-              
+        if( wrapList.length > 0 ){
+            
+            var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');            
+            var msnry = new Masonry( container, {         
+                itemSelector: 'li'              
             });
 
-        });*/
-
-        /*var msnry;
-        imagesLoaded( container, function() {
-          msnry = new Masonry( container, {
-             itemSelector: 'li'
-          });
-        });*/
-
-
-
-        /*masonry.reloadItems();
-        masonry.layout();  */     
+            setTimeout(function(){ 
+                msnry.reloadItems();
+                msnry.layout();  
+            }, 500);            
+        }
     }
 
     
@@ -180,10 +146,9 @@
                     iwCloseBtn.css({
                         opacity: '1', // by default the close button has an opacity of 0.7
                         right: '38px',
-                        top: '3px', // button repositioning
-                        border: '7px solid #48b5e9', // increasing button border and new color
+                        top: '3px', // button repositioning                        
                         'border-radius': '13px', // circular effect
-                        'box-shadow': '0 0 5px #3990B9' // 3D effect to highlight the button
+                        'box-shadow': 'rgb(11, 93, 153) 0px 0px 5px' // 3D effect to highlight the button
                         
                     });
 
@@ -231,8 +196,10 @@
     }
     $.initModule('.lista-lugares-fiesta', function () {
         transformar();
+        unsortTilesEvents();
         jq(document).ajaxComplete(function () {
-            setTimeout(transformar, 50)
+            setTimeout(transformar, 50);
+            unsortTilesEvents();
         });
         $.mapsLoaded.promise().then(function () {
             updateMapMarkers();
