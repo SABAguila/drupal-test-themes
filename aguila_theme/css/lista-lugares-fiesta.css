@@ -322,8 +322,11 @@
     }
 
 }
-
-
+@media only screen and (max-width : 600px) {
+    .container-map {
+        text-align: center;
+    }
+}
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
     .lista-lugares-fiesta  .view-content{
@@ -331,9 +334,8 @@
         width: 100%;
     }
     .lista-lugares-fiesta  .view-content ul  li {        
-        width: 90%;        
+       width: 90%;        
     }
-
 }
 
 /* Extra Small Devices, Phones */
