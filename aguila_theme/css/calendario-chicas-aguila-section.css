@@ -908,9 +908,17 @@ body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
     }
 
     .chicas-aguila .calendar-calendar .evento-calendario-overlay .box-arrow {
-        -ms-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    #mobile-calendar {
+        display: none;
+    }
+
+    .popup-evento-mobile {
+        display: none;
     }
 
 }
