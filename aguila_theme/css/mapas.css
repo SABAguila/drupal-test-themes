@@ -112,6 +112,7 @@ ul#social li:last-of-type{
     }
     .map-info-window h1{
         width: 159px;
+        font-size:100%;
     }
 }
 @media only screen and (min-width : 320px) {
