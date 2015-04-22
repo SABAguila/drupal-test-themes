@@ -90,7 +90,8 @@ body.page-node-606 .slide-content p{
 
 
 body.page-node-606 .slick-initialized .slide-content{
-    height: 529px;
+    height: 100%;
+    padding: 6% 30px;
 }
 .slide-main-content {
     overflow: hidden;
@@ -299,6 +300,7 @@ body.page-node-606 .slick-initialized .slide-content{
 /* @end */
 
 /* @group Media Query */
+
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
