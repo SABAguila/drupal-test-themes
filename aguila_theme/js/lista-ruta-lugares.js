@@ -12,7 +12,7 @@
                 var rating,
                     ratingText;
 
-                el.addClass('transformado');
+                el.addClass('transformado clearfix');
 
                 if (el.find('.favoritos.logged-in').length === 0) {
                     el.find('.favoritos.hidden').removeClass('hidden');
@@ -29,16 +29,14 @@
                 
             }           
         });
-        
-        
-
     }
 
     function unsortTilesEvents(){
         
         var wrapList = $('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
+        var mobileCellPhone = (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini|windows phone/i.test(navigator.userAgent));
 
-        if( wrapList.length > 0 ){
+        if( wrapList.length > 0 && document.documentElement.clientWidth > 736 && !mobileCellPhone){
             
             var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');            
             var msnry = new Masonry( container, {         
