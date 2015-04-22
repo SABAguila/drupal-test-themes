@@ -37,20 +37,53 @@
 
     function unsortTilesEvents(){
 
-        var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content');
+
+
+        var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
+
+        console.log(container);
+
         var msnry = new Masonry( container, {
           // options          
-          itemSelector: 'li',
-          percentPosition: true,
-          isInitLayout: false
+          itemSelector: 'li'
+          
         });
 
-        msnry.on( 'layoutComplete', function() {
-          console.log('layout is complete');
-        });
-        // manually trigger initial layout
-        msnry.layout();
+        setTimeout(function(){ 
+            msnry.reloadItems();
+            msnry.layout();  
+        }, 500);
+
+       //container.masonry('reload');
+       /*imagesLoaded( container, function() {
+          msnry.reloadItems();   
+          msnry.layout(); 
+        });*/
+
         
+       
+        /*jq(window).load(function(){
+
+            var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
+            var msnry = new Masonry( container, {
+              // options          
+              itemSelector: 'li'
+              
+            });
+
+        });*/
+
+        /*var msnry;
+        imagesLoaded( container, function() {
+          msnry = new Masonry( container, {
+             itemSelector: 'li'
+          });
+        });*/
+
+
+
+        /*masonry.reloadItems();
+        masonry.layout();  */     
     }
 
     
