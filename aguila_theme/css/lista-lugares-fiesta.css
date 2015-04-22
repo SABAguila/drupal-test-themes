@@ -240,6 +240,11 @@
 .node-fiestas .content .field-name-field-titulo-mapa .field-items{
     text-align: center;
 }
+#block-system-main .tb-terminal .bottom-inset-2{
+   /* height: 21px;
+    background: #ffd800;
+    margin-top: 41px;*/
+}
 .node-fiestas .content .field-name-field-titulo-mapa .field-label{
     color: #ffd800;
     background: #ffd800;
@@ -304,6 +309,23 @@
     .node-fiestas .content .field-item p:nth-child(-n+3){
         display: block;
     }
+    .node-fiestas .content .field-item.even img{
+        width: 80%;
+        height: auto;
+    }
+    .node-fiestas .field-name-field-link-m-s-informaci-n{
+        width: 131px;
+    }
+    .node-fiestas .field-name-field-texto-compartir{
+        margin-left: 8px;
+        margin-right: 7px;
+    }
+
+}
+@media only screen and (max-width : 600px) {
+    .container-map {
+        text-align: center;
+    }
 }
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
@@ -311,17 +333,22 @@
         max-width: 100%;
         width: 100%;
     }
-    .lista-lugares-fiesta  .view-content ul  li {        
-        width: 90%;        
+    .lista-lugares-fiesta  .view-content ul  li {       
+       margin: 0 auto  26px;
+       max-width: 400px;        
+       width: 90%;
     }
-
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
 }
-
+@media only screen and (min-width : 600px) {
+    .node-fiestas .field-name-field-link-seguir-leyendo a{
+        display: none;
+    }
+}
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .lista-lugares-fiesta  .view-content{

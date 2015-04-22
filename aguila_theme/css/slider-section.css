@@ -73,7 +73,26 @@ body.page-node-606 .slick-initialized .slide-content,
 body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{/*Styles for Festival Vallenato*/
     color: #0059bc!important;
 }
+body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{
+    font-size: 160%;
+    line-height: 20px;
+    text-align: center;
+}
 
+body.page-node-606 .slick-initialized .slide-content .favoritos-content-type p{
+    margin-top: 27px;
+    font-weight: bold;  
+}
+ 
+body.page-node-606 .slide-content p{
+    margin-top: 51px;
+}
+
+
+body.page-node-606 .slick-initialized .slide-content{
+    height: 100%;
+    padding: 6% 30px;
+}
 .slide-main-content {
     overflow: hidden;
     vertical-align: middle;
@@ -282,6 +301,7 @@ body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{/*S
 
 /* @group Media Query */
 
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
@@ -407,7 +427,7 @@ body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{/*S
     .slide-content h3 {
         padding: 0;
         margin: 6px 0;
-        font-size: 530%;
+        font-size: 690%;
         line-height: 80px;
     }
 
