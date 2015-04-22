@@ -38,7 +38,7 @@ ul#social li:first-of-type{
 ul#social li:last-of-type{
    background-position: right; 
 }
-div.informacion{
+div.information{
     background:#efcb00;
     color:rgba(11, 93, 153, 1);
 }
