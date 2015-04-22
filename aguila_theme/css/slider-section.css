@@ -74,8 +74,8 @@ body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{/*S
     color: #0059bc!important;
 }
 body.page-node-606 .slick-initialized .slide-content .favoritos-content-type{
-    font-size: 20px;
-    line-height: 19px;
+    font-size: 160%;
+    line-height: 20px;
     text-align: center;
 }
 
@@ -84,7 +84,14 @@ body.page-node-606 .slick-initialized .slide-content .favoritos-content-type p{
     font-weight: bold;  
 }
  
+body.page-node-606 .slide-content p{
+    margin-top: 51px;
+}
 
+
+body.page-node-606 .slick-initialized .slide-content{
+    height: 529px;
+}
 .slide-main-content {
     overflow: hidden;
     vertical-align: middle;
