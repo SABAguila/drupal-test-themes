@@ -114,6 +114,12 @@ ul#social li:last-of-type{
         width: 159px;
         font-size:100%;
     }
+    ul#social li:first-of-type{
+        background-position: -67% 0; 
+    }
+    ul#social li:last-of-type{
+        background-position: 14% 0; 
+    }
 }
 @media only screen and (min-width : 320px) {
     .mapa-lugar-detalle {
