@@ -113,7 +113,7 @@ div.information>div {
 
 @media only screen and (max-width : 500px) {
     .gm-style-iw {
-        width: 154px!important;
+        width: 153px!important;
         top: 0px !important;
         left: 17px !important;
         background-color: rgba(0, 170, 216, 0.77);
@@ -121,22 +121,29 @@ div.information>div {
         border-radius: 2px;
     }
     .map-info-window img{
-        width: 41%;
-        margin-top: 16px;
+        width: 35%;
+        margin-top: 9px;
     }
     .map-info-window h1{
-        width: 154px;
+        width: 152px;
         font-size:100%;
+        margin-top: 5px;
     }
     ul#social li:first-of-type{
-        background-position: -67% 0; 
+        background-position: -67% -9px; 
     }
     ul#social li:last-of-type{
-        background-position: 14% 0; 
+        background-position: 14% -9px; 
+    }
+    ul#social li{
+       height: 25px; 
     }
     div.information{
         font-size: 10px;
         line-height: 11px;
+    }
+    .map-info-window #social{
+        height: 25px;
     }
 }
 @media only screen and (min-width : 320px) {
