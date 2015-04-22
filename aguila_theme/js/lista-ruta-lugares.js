@@ -40,8 +40,16 @@
         var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content');
         var msnry = new Masonry( container, {
           // options          
-          itemSelector: 'li'
+          itemSelector: 'li',
+          percentPosition: true,
+          isInitLayout: false
         });
+
+        msnry.on( 'layoutComplete', function() {
+          console.log('layout is complete');
+        });
+        // manually trigger initial layout
+        msnry.layout();
         
     }
 
