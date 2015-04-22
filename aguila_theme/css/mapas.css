@@ -113,7 +113,7 @@ div.information>div {
 
 @media only screen and (max-width : 500px) {
     .gm-style-iw {
-        width: 153px!important;
+        width: 152px!important;
         top: 0px !important;
         left: 17px !important;
         background-color: rgba(0, 170, 216, 0.77);
