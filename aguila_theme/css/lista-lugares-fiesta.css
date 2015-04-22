@@ -333,11 +333,10 @@
         max-width: 100%;
         width: 100%;
     }
-    .lista-lugares-fiesta  .view-content ul  li {        
+    .lista-lugares-fiesta  .view-content ul  li {       
        margin: 0 auto  26px;
        max-width: 400px;        
        width: 90%;
-
     }
 }
 
@@ -356,7 +355,11 @@
         max-width: 100%;
         width: 100%;
     }
-    .lista-lugares-fiesta  .view-content ul  li {        
+    .lista-lugares-fiesta  .view-content ul{
+          margin: 50px 0 0;
+    }
+    .lista-lugares-fiesta  .view-content ul  li {
+        margin: 0 13px 26px;        
         width: 225px;        
     }
 }
@@ -366,6 +369,9 @@
     .lista-lugares-fiesta  .view-content{
         max-width: 960px;
         width: 100%;
+    }
+    .lista-lugares-fiesta  .view-content ul{
+        margin: 50px -10px 0;
     }
     .lista-lugares-fiesta  .view-content ul  li {        
         width: 290px;        
