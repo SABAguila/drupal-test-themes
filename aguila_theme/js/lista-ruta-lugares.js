@@ -38,25 +38,21 @@
 
     }
 
-    function unsortTilesEvents(){
-        
+    function unsortTilesEvents(){        
         var wrapList = $('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');
         var mobileCellPhone = (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini|windows phone/i.test(navigator.userAgent));
 
-        if( wrapList.length > 0 && document.documentElement.clientWidth > 736 && !mobileCellPhone){
-            
+        if( wrapList.length > 0 && document.documentElement.clientWidth > 736 && !mobileCellPhone){            
             var container = document.querySelector('.view-lista-de-lugares-de-fiesta .view-content .item-list ul');            
             var msnry = new Masonry( container, {         
                 itemSelector: 'li'              
             });
-
             setTimeout(function(){ 
                 msnry.reloadItems();
                 msnry.layout();  
             }, 700);            
         }
     }
-
     
     
     function validGeolocation(value) {
@@ -225,7 +221,6 @@
         $.mapsLoaded.promise().then(function () {
             updateMapMarkers();
         });
-    });
-    
+    });    
 
 }(jQuery2, jQuery));
