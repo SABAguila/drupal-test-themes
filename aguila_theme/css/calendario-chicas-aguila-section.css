@@ -9,6 +9,14 @@
     position: inherit;
 }
 
+#block-views-calendario-chicas-aguila-block .view-calendario-chicas-aguila .view-header a[name=calendario] {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    background: none;
+    display: block;
+}
+
 .calendario-chicas-aguila .date-nav-wrapper .date-heading {
     text-align: left;
     padding-right: 106px;
@@ -1093,3 +1101,18 @@ body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
 
 /* @end */
 
+/*test*/
+.banner-enero, 
+.banner-febrero, 
+.banner-marzo,
+.banner-abril,
+.banner-mayo,
+.banner-junio,
+.banner-julio,
+.banner-agosto,
+.banner-septiembre,
+.banner-octubre,
+.banner-noviembre,
+.banner-diciembre {
+    display: none;
+}
