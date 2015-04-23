@@ -31,7 +31,6 @@
     });
 
     $('.view-lista-de-lugares-de-fiesta li .views-field-field-facebook img').on('click touch', function(){
-
         var currentUrl = getBaseUrl() + $(this).closest('li').find('.views-field-title a').attr('href');
         sharePop('facebook', currentUrl);
     });
