@@ -1094,9 +1094,22 @@ body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
     .chicas-aguila .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
         color: #000;
     }
+    .calendario-chicas-aguila .date-nav-wrapper .date-heading {
+        padding-right: 0;
+        width: 100%;
+        min-width: 340px; 
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 
-
-    
+    .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
+        color: #000;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+       
 }
 @media only screen and (max-width : 320px) {
     .banner-calendario-chicas-aguila h3,
