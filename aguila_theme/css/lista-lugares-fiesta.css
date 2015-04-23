@@ -18,9 +18,26 @@
 
 .lista-lugares-fiesta  .view-content ul  li {
     border:1px solid #efefef;
-    border-bottom: 5px solid #5693b2; 
     margin: 0 13px 26px;
 }
+
+
+.lista-lugares-fiesta  .view-content ul  li.party-icon-Bares {
+    border-bottom: 5px solid #5693b2; 
+}
+.lista-lugares-fiesta  .view-content ul  li.party-icon-Eventos {
+    border-bottom: 5px solid #2eb398; 
+}
+.lista-lugares-fiesta  .view-content ul  li.party-icon-Hoteles {
+    border-bottom: 5px solid #e7604a; 
+}
+.lista-lugares-fiesta  .view-content ul  li.party-icon-Restaurantes{
+    border-bottom: 5px solid #90899b;
+}
+.lista-lugares-fiesta  .view-content ul  li.party-icon-2x1{
+    border-bottom: 5px solid #14b9d5;
+}
+
 
 .lista-lugares-fiesta  .view-content ul  li div div a{
     display: block;
@@ -114,31 +131,34 @@
     background-size: 100%;
 }
 
-.lista-lugares-fiesta  .view-content ul li .party-icon {
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon {
     background-image: url(../images/sprite-categories.png);
-    width: 20px;
-    height: 20px;
+    width: 27px;
+    height: 22px;
 }
 
-.lista-lugares-fiesta  .view-content ul li .party-icon-Hotel {
-    background-position: -80px 0;
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Hotel,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon-Hoteles {
+    background-position: -87px -7px;
 }
 
-.lista-lugares-fiesta  .view-content ul li .party-icon-Eventos,
-.lista-lugares-fiesta  .view-content ul li .party-icon-Evento {
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Eventos,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Evento {
     background-position: -90px -50px;
 }
 
-.lista-lugares-fiesta  .view-content ul li .party-icon-Restaurante {
-    background-position: -80px -80px;
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Restaurante,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon-Restaurantes {
+    background-position: -85px -91px;
 }
 
-.lista-lugares-fiesta  .view-content ul li .party-icon-2x1 {
-    background-position: -80px -120px;
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-2x1 {
+    background-position: -86px -129px;
 }
 
-.lista-lugares-fiesta  .view-content ul li .party-icon-Bar {
-    background-position: -80px -160px;
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Bar,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-tipo-de-lugar .party-icon.party-icon-Bares {
+    background-position: -90px -169px;
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-title,
@@ -193,9 +213,13 @@
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-field-facebook img,
-.lista-lugares-fiesta  .view-content ul li .views-field-field-twitter img{
+.lista-lugares-fiesta  .view-content ul li .views-field-field-twitter img{    
     width: 100%;
     height: auto;
+}
+.lista-lugares-fiesta  .view-content ul li .views-field-field-facebook:hover,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-twitter:hover{
+    cursor: pointer;
 }
 
 .lista-lugares-fiesta  .view-content ul li  .views-field-field-tipo-de-lugar{
@@ -333,8 +357,10 @@
         max-width: 100%;
         width: 100%;
     }
-    .lista-lugares-fiesta  .view-content ul  li {        
-       width: 90%;        
+    .lista-lugares-fiesta  .view-content ul  li {       
+       margin: 0 auto  26px;
+       max-width: 400px;        
+       width: 90%;
     }
 }
 
@@ -353,7 +379,11 @@
         max-width: 100%;
         width: 100%;
     }
-    .lista-lugares-fiesta  .view-content ul  li {        
+    .lista-lugares-fiesta  .view-content ul{
+          margin: 50px 0 0;
+    }
+    .lista-lugares-fiesta  .view-content ul  li {
+        margin: 0 13px 26px;        
         width: 225px;        
     }
 }
@@ -364,11 +394,14 @@
         max-width: 960px;
         width: 100%;
     }
+    .lista-lugares-fiesta  .view-content ul{
+        margin: 50px -10px 0;
+    }
     .lista-lugares-fiesta  .view-content ul  li {        
         width: 290px;        
     }
     .container-map > p:first-of-type {
-        width: 810px;
+        width: 990px;
         margin: 0 auto;
         position: relative;
         top: -100px;
