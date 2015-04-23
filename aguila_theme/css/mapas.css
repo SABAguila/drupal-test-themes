@@ -58,13 +58,14 @@ div.information>div {
 }
 
 .map-info-window h1 {
-    font-size: 16px;
+    font-size: 13px;
     color: white!important;
     width: 214px;
     padding: 0px 13px;
+    margin-top: 10px;
 }   
 .map-info-window img{
-    margin-top: 33px;
+    margin-top: 13px; 
 }
 .map-info-window .event-date {
     color: #28c8fe;
@@ -113,7 +114,7 @@ div.information>div {
 
 @media only screen and (max-width : 500px) {
     .gm-style-iw {
-        width: 153px!important;
+        width: 150px!important;
         top: 0px !important;
         left: 17px !important;
         background-color: rgba(0, 170, 216, 0.77);
@@ -125,9 +126,9 @@ div.information>div {
         margin-top: 9px;
     }
     .map-info-window h1{
-        width: 152px;
+        width: 150px;
         font-size:100%;
-        margin-top: 5px;
+        margin-top:5px;
     }
     ul#social li:first-of-type{
         background-position: -67% -9px; 
