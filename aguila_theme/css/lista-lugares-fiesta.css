@@ -213,9 +213,13 @@
 }
 
 .lista-lugares-fiesta  .view-content ul li .views-field-field-facebook img,
-.lista-lugares-fiesta  .view-content ul li .views-field-field-twitter img{
+.lista-lugares-fiesta  .view-content ul li .views-field-field-twitter img{    
     width: 100%;
     height: auto;
+}
+.lista-lugares-fiesta  .view-content ul li .views-field-field-facebook:hover,
+.lista-lugares-fiesta  .view-content ul li .views-field-field-twitter:hover{
+    cursor: pointer;
 }
 
 .lista-lugares-fiesta  .view-content ul li  .views-field-field-tipo-de-lugar{
