@@ -1012,12 +1012,25 @@ body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
         text-align: center;
     }
 
+
+/*.calendario-chicas-aguila .date-nav-wrapper .date-heading {
+        padding-right: 0;
+        width: 100%;
+        min-width: 340px; 
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }*/
+
+
     .calendario-chicas-aguila .date-nav-wrapper .date-heading h3.formatted {
         color: #000;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
+
+
     .chicas-aguila .calendar-calendar .evento-calendario-overlay {
         left: 73px;
     }
@@ -1070,15 +1083,6 @@ body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
     #block-views-calendario-chicas-aguila-block .calendario-chicas-aguila .date-nav-wrapper .date-next {
         right: 0;
     }    
-
-    .calendario-chicas-aguila .date-nav-wrapper .date-heading {
-        padding-right: 0;
-        width: 100%;
-        min-width: 340px; 
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
 
 }
 
