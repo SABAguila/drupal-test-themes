@@ -1055,6 +1055,10 @@ body.chicas-aguila .calendar-calendar .evento-calendario-overlay a{
     #mobile-calendar {
         display: block;
     }
+
+    .popup-evento-mobile {
+        display: block;
+    }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
