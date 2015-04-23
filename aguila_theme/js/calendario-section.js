@@ -160,7 +160,7 @@
         $('.popup-evento-mobile .title').text('');
 
         $('.popup-evento-mobile .number').text(numDay);
-        $('.popup-evento-mobile .day').text(nameDay);
+        $('.popup-evento-mobile .day').html(nameDay);
         $('.popup-evento-mobile .title').text(nameEvent);
     }
 
