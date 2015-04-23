@@ -400,6 +400,12 @@
     .lista-lugares-fiesta  .view-content ul  li {        
         width: 290px;        
     }
+    .container-map > p:first-of-type {
+        width: 810px;
+        margin: 0 auto;
+        position: relative;
+        top: -100px;
+    }
 }
 
 /* Large Devices, Wide Screens */
