@@ -44,7 +44,7 @@
                     evento = dias.find("td[data-date*="+fechaEvento+"]");
                     // Add color based on selection
                     dia.addClass(colorEvento);
-                    evento.addClass(colorEvento);
+                    evento.find('.inner').addClass(colorEvento);
                     // Duplicate day on overlay
                     evento.find('.evento-calendario-overlay .date').text(dia.find('.day').text());
                     // Add custom banner as background
@@ -97,7 +97,7 @@
                     var partesFecha = $(el).attr("data-date").split("-");
                     evento.attr("data-date", partesFecha[1]+"-"+partesFecha[2]+"-"+partesFecha[0]);
                     evento.append($(el).find(".evento-calendario-overlay").clone().removeClass("hidden"));
-                    
+
                     jQuery("#mobile-calendar .events").append(evento);
                 });
 
@@ -108,14 +108,110 @@
                     start_year: partesFecha[0]
                  });
 
+                $('#mobile-calendar .week-day').click(function(e){
+                    if($(this).hasClass('hasEvent')){
+                        e.stopPropagation();
+                        var date = $(this).data('date');
+                        date = date.split('-');
+                        date = date[2]+'-'+n(date[0])+'-'+n(date[1]);
+                        var dateSelected = new Date(date);
+                        var numDay = $(this).find('.the-number').text();
+                        var nameDay = getNameDay(dateSelected);
+                        var nameEvent = $(this).find('h4.title').text();
+                        var currentMonth = $('.date-nav .formatted').text();
+                        currentMonth = currentMonth.split(',');
+                        var image = $('.banner-calendario-chicas-aguila .banner .banner-'+currentMonth[0].toLowerCase()+' img').attr('src');
+                        $('.popup-evento-mobile').css('background','url("'+image+'") no-repeat');
+                        popupEventMobile(numDay, nameDay, nameEvent);
+                        $('.popup-evento-mobile').css('display','block');
+                        return false;
+                    }
+                });
+
+                $(document).click(function(){
+                    $('.popup-evento-mobile').css('display','none');
+                });
+
             }
         });
     }
 
+    function getNameDay(date){
+        var weekday = new Array(7);
+        weekday[0]=  "Domingo";
+        weekday[1] = "Lunes";
+        weekday[2] = "Martes";
+        weekday[3] = "Miércoles";
+        weekday[4] = "Jueves";
+        weekday[5] = "Viernes";
+        weekday[6] = "Sábado";
+
+        var n = weekday[date.getDay()+1]; 
+        return n;
+    }
+
+    function n(n){
+        return n > 9 ? "" + n: "0" + n;
+    }
+
+    function popupEventMobile(numDay, nameDay, nameEvent) {
+        $('.popup-evento-mobile .number').text('');
+        $('.popup-evento-mobile .day').text('');
+        $('.popup-evento-mobile .title').text('');
+
+        $('.popup-evento-mobile .number').text(numDay);
+        $('.popup-evento-mobile .day').text(nameDay);
+        $('.popup-evento-mobile .title').text(nameEvent);
+    }
+
+    function setTextCurrentDate() {
+        var currentDate = $(".view-calendario-chicas-aguila").find('td.today').data('date');
+        $(".view-calendario-chicas-aguila").find('tr.single-day').find("[data-date='" + currentDate + "']").find('.inner').html('<div class="hoy">hoy</div>');
+    }
+
+    function hideImagesMonth() {
+        if($(window).width() >= 600){
+            var currentMonth = $('.date-nav .formatted').text();
+            currentMonth = currentMonth.split(',');
+            var arrayMonthImage = $('.view-calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner ').find('div');
+            $.each(arrayMonthImage, function(index, value){
+                var monthBanner = $(this).attr('class').split('-');
+                monthBanner = monthBanner[1];
+                if(currentMonth[0].toLowerCase() == monthBanner.toLowerCase()){
+                    $(this).show();
+                }
+            });
+        }
+        else{
+            var arrayMonthImage = $('.view-calendario-chicas-aguila .view-banner-calendario-chicas-aguila .banner ').find('div');
+            $.each(arrayMonthImage, function(index, value){
+                $(this).hide();
+            });
+        }
+    }
+
+    function printRedSunday() {
+        var sundays = $('.view-calendario-chicas-aguila tbody .date-box td');
+        $.each(sundays, function(){
+            if($(this).attr('headers') == 'Domingo'){
+                $(this).find('.month.day').css('color','#FF0000');
+            }
+        });
+    }
+
+    $(window).resize(function(){console.info('asd');
+        hideImagesMonth();
+    });
+
     $.initModule(".view-calendario-chicas-aguila", function () {
         transformarCal();
+        hideImagesMonth();
+        setTextCurrentDate();
+        printRedSunday();
         jq(document).ajaxComplete(function () {
             setTimeout(transformarCal, 50);
+            setTimeout(hideImagesMonth, 50);
+            setTimeout(printRedSunday, 50);
         });
     });
 }(jQuery2, jQuery));
