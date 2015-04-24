@@ -233,3 +233,9 @@
 
 }
 /* @end */
+
+body.node-type-lugar-de-fiesta .content-area .region-content .block-system,
+body.node-type-lugar-de-fiesta .content-area .region-content .view-display-id-block
+{
+    display: none;
+}
