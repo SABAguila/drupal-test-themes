@@ -234,10 +234,11 @@
 }
 /* @end */
 body.node-type-lugar-de-fiesta .content-area .views-field-nothing,
-body.node-type-lugar-de-fiesta .content-area div[class*="field-name"],
+body.node-type-lugar-de-fiesta .content-area .field-label-above,
 body.node-type-lugar-de-fiesta .content-area .region-content .views-field-field-facebook,
 body.node-type-lugar-de-fiesta .content-area .region-content .views-field-field-twitter
 {
-   opacity:0.3;
+  display: none;
 }
 
+ 
