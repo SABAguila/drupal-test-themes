@@ -48,7 +48,7 @@ div.information>div {
   padding-left: 6px;
 }
 div.information>div:first-of-type {
-  padding-bottom: 5px;
+  padding-top: 5px;
 }
 div.information>div:last-of-type {
   padding-bottom: 5px;
