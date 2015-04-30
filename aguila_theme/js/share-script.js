@@ -6,10 +6,12 @@
             
             if( $(this).hasClass("field-name-field-facebook") ){
                 sharePop('facebook', currentUrl);
+                e.preventDefault();
             }else if( $(this).hasClass("field-name-field-twitter") ){
-                sharePop('twitter', currentUrl);                
+                sharePop('twitter', currentUrl);   
+                e.preventDefault();             
             }            
-            e.preventDefault();
+            
         });
 
         $('.container-map').on('click touch', 'li', function(e){
@@ -19,8 +21,8 @@
                 sharePop('facebook', currentUrl);
             }else if( $(this).hasClass("field-name-field-twitter") ){
                 sharePop('twitter', currentUrl);                
+                e.preventDefault();
             }
-            e.preventDefault();
         });
         $(".field-name-field-link-seguir-leyendo a").click(function(e){
             $(" .node-fiestas .content .field-item p").show();
