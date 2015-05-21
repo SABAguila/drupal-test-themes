@@ -72,8 +72,8 @@
 }
 
 .socialHeader .instagram:hover {
-    background-color: #8caac3;
-    border-color: #8caac3;
+    background-color: #A38B7D;
+    border-color: #A38B7D;
 }
 
 /* @end */
@@ -189,11 +189,11 @@
 }
 
 .socialFooter .instagram {
-    background-color: #3f729b;
+    background-color: #9f6e51;
 }
 
 .socialFooter .instagram:hover {
-    background-color: #8caac3;
+    background-color: #A38B7D;
 }
 
 .socialFooter .instagram:before {
